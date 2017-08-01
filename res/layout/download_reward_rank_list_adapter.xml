@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:leplay="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/soft_list_item_lay"
+              style="@style/listItemSytle"
+              android:layout_height="80dp">
+
+     <ImageView
+            android:id="@+id/download_reward_rank_icon"
+            android:layout_width="45.33dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/download_reward_rank_first" />
+     <TextView 
+            android:id="@+id/download_reward_rank_num"
+            android:layout_width="45.33dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"  
+            android:textColor="@color/list_soft_describe_color" 
+            android:visibility="gone"
+            android:gravity="center"/>
+           
+     <!-- icon -->
+
+    <com.xd.leplay.store.view.CustomImageView
+        android:id="@+id/download_reward_rank_user_icon"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/user_icon_default"
+        leplay:type="circle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/download_reward_rank_gain_coins_lay"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/yellow_corner_bg_shape"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/download_reward_rank_gain_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/download_reward_rank_gain_coins"
+                    android:textColor="@color/download_reward_rank_get_coin_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"   
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" 
+                android:layout_toLeftOf="@+id/download_reward_rank_gain_coins_lay"
+                android:layout_toStartOf="@+id/download_reward_rank_gain_coins_lay">
+
+                <TextView
+                    android:id="@+id/download_reward_rank_user_name"
+                    style="@style/listNameStyle"
+                    android:text="@string/download_reward_rank_user_name" />
+
+                <TextView
+                    android:id="@+id/download_reward_rank_app_sum"
+                    style="@style/listDescribeStyle"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/download_reward_rank_app_sum" />
+            </LinearLayout>
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_weight="1"
+        android:background="@color/rank_list_bg_color" >
+
+        <RelativeLayout
+            android:id="@+id/rank_list_lay_left"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#f5f5f5" />
+
+            <TextView
+                android:id="@+id/rank_list_total_download_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="1589万人下载"
+                android:textColor="@color/list_describle_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/rank_list_app_name_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rank_list_total_download_left"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9dp"
+                android:singleLine="true"
+                android:text="皇室战争"
+                android:textColor="@color/list_name_color"
+                android:textSize="16sp" />
+
+            <com.xd.leplay.store.gui.details.view.DetailDownloadProgressButton
+                android:id="@+id/rank_list_download_btn_left"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rank_list_total_download_left"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" />
+            <!-- 做任务标识按钮 -->
+
+            <TextView
+                android:id="@+id/rank_list_do_task_text_left"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rank_list_total_download_left"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/task_state_btn_bg1_shape"
+                android:gravity="center"
+                android:text="做任务"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/rank_list_icon_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rank_list_lay_left"
+            android:background="@drawable/rank_list_left" />
+
+        <ImageView
+            android:id="@+id/soft_list_app_icon_left"
+            style="@style/listIconStyle"
+            android:layout_above="@+id/rank_list_icon_left"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-3dp" />
+
+        <TextView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_above="@+id/rank_list_lay_left"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-15dp"
+            android:background="@drawable/soft_list_rank_oval_shape_left"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f5f5f5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_weight="1"
+        android:background="@color/rank_list_bg_color" >
+
+        <RelativeLayout
+            android:id="@+id/rank_list_lay_center"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#f5f5f5" />
+
+            <TextView
+                android:id="@+id/rank_list_total_download_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="1589万人下载"
+                android:textColor="@color/list_describle_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/rank_list_app_name_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rank_list_total_download_center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:singleLine="true"
+                android:text="皇室战争"
+                android:textColor="@color/list_name_color"
+                android:textSize="16sp" />
+
+            <com.xd.leplay.store.gui.details.view.DetailDownloadProgressButton
+                android:id="@+id/rank_list_download_btn_center"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rank_list_total_download_center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp" />
+            <!-- 做任务标识按钮 -->
+
+            <TextView
+                android:id="@+id/rank_list_do_task_text_center"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rank_list_total_download_center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/task_state_btn_bg1_shape"
+                android:gravity="center"
+                android:text="做任务"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/rank_list_icon_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rank_list_lay_center"
+            android:background="@drawable/rank_list_center" />
+
+        <ImageView
+            android:id="@+id/soft_list_app_icon_center"
+            style="@style/listIconStyle"
+            android:layout_above="@+id/rank_list_icon_center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-3dp" />
+
+        <TextView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_above="@+id/rank_list_lay_center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-15dp"
+            android:background="@drawable/soft_list_rank_oval_shape_center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f5f5f5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_weight="1"
+        android:background="@color/rank_list_bg_color" >
+
+        <RelativeLayout
+            android:id="@+id/rank_list_lay_right"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/rank_list_total_download_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="1589万人下载"
+                android:textColor="@color/list_describle_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/rank_list_app_name_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rank_list_total_download_right"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="9dp"
+                android:singleLine="true"
+                android:text="皇室战争"
+                android:textColor="@color/list_name_color"
+                android:textSize="16sp" />
+
+            <com.xd.leplay.store.gui.details.view.DetailDownloadProgressButton
+                android:id="@+id/rank_list_download_btn_right"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rank_list_total_download_right"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp" />
+            <!-- 做任务标识按钮 -->
+
+            <TextView
+                android:id="@+id/rank_list_do_task_text_right"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/rank_list_total_download_right"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/task_state_btn_bg1_shape"
+                android:gravity="center"
+                android:text="做任务"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/rank_list_icon_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rank_list_lay_right"
+            android:background="@drawable/rank_list_right" />
+
+        <ImageView
+            android:id="@+id/soft_list_app_icon_right"
+            style="@style/listIconStyle"
+            android:layout_above="@+id/rank_list_icon_right"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-3dp" />
+
+        <TextView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_above="@+id/rank_list_lay_right"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-15dp"
+            android:background="@drawable/soft_list_rank_oval_shape_right"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="#f5f5f5" />
+    </RelativeLayout>
+
+</LinearLayout>

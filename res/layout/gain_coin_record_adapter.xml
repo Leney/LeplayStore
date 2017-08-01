@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="13.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="13.3dp"
+            android:layout_marginStart="10dp" >
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/divider_color" />
+
+            <!-- 日期 -->
+
+            <TextView
+                android:id="@+id/coin_record_adapter_date"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/blue_round_corner_bg_shape"
+                android:gravity="center"
+                android:text="今日"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <!-- 具体的获取金币方式和获得金币数量的显示区域 -->
+
+        <LinearLayout
+            android:id="@+id/coin_record_adapter_content_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="16.6dp"
+            android:paddingRight="16.6dp"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/coin_record_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/divider_color" />
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:background="@drawable/circle_gray_bg_shape" />
+    </FrameLayout>
+
+</LinearLayout>

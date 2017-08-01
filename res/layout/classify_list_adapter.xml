@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal" >
+
+    <!-- 左边部分 -->
+
+    <LinearLayout
+        android:id="@+id/classify_adapter_left_lay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+        <!-- 左边item的icon -->
+
+        <ImageView
+            android:id="@+id/classify_adapter_left_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="26.6dp"
+            android:layout_marginStart="26.6dp"
+            android:src="@drawable/default_icon" />
+
+        <!-- 左边item的名称 -->
+
+        <TextView
+            android:id="@+id/classify_adapter_left_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.3dp"
+            android:layout_marginStart="13.3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="通讯社交"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color" />
+
+    <!-- 右边部分 -->
+
+    <LinearLayout
+        android:id="@+id/classify_adapter_right_lay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
+
+        <!-- 右边item的icon -->
+
+        <ImageView
+            android:id="@+id/classify_adapter_right_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="26.6dp"
+            android:layout_marginStart="26.6dp"
+            android:src="@drawable/default_icon" />
+
+        <!-- 右边item的名称 -->
+
+        <TextView
+            android:id="@+id/classify_adapter_right_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.3dp"
+            android:layout_marginStart="13.3dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="通讯社交"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

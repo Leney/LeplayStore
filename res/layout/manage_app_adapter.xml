@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/listItemSytle" >
+
+    <!-- icon -->
+
+    <ImageView
+        android:id="@+id/manage_app_icon"
+        style="@style/listIconStyle" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <!-- 名称 -->
+
+        <TextView
+            android:id="@+id/manage_app_name"
+            style="@style/listNameStyle"
+            android:text="58同城" />
+
+        <!-- 版本大小 -->
+
+        <TextView
+            android:id="@+id/manage_app_size"
+            style="@style/listSizeDesStyle"
+            android:layout_marginTop="14dp"
+            android:text="版本大小:116.4MB" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/manage_app_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:button="@drawable/uninstalled_check_selector"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#498fd0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 标题部分 -->
+
+    <com.xd.leplay.store.view.ChildTitleView
+        android:id="@+id/invite_qd_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:singleLine="true"
+        android:text="@string/invite_qd_top_text"
+        android:textColor="#ffffff"
+        android:textSize="30.6dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="233.3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/white_corner_bg_shape2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- 二维码图片 -->
+
+        <ImageView
+            android:id="@+id/invite_qd_img"
+            android:layout_width="194.6dp"
+            android:layout_height="194.6dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/invite_qd_invite_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="邀请码：A1000001或者15118042006"
+            android:textColor="#000000"
+            android:textSize="13.3sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="233.3dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qd_invite_bottom_img" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/qd_step" />
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 整个显示下载信息的部分 -->
+
+    <LinearLayout
+        android:id="@+id/download_soft_list_info_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingBottom="13.3dp"
+        android:paddingTop="13.3dp" >
+
+        <!-- icon -->
+
+        <ImageView
+            android:id="@+id/download_soft_list_app_icon"
+            style="@style/listIconStyle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <!-- 应用名称 -->
+
+            <TextView
+                android:id="@+id/download_soft_list_app_name"
+                style="@style/listNameStyle"
+                android:text="58同城" />
+
+            <TextView
+                android:id="@+id/download_soft_list_download_size"
+                style="@style/listSizeDesStyle"
+                android:layout_marginTop="6dp"
+                android:text="12.6MB/48MB" />
+
+            <ProgressBar
+                android:id="@+id/download_soft_list_progress"
+                style="@style/progressBarLineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:max="100"
+                android:progress="20" />
+        </LinearLayout>
+
+        <!-- 下拉/上拉标识 -->
+
+        <ImageView
+            android:id="@+id/download_soft_list_pull_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/down_point" />
+
+        <com.xd.leplay.store.view.download.DownloadButton
+            android:id="@+id/download_soft_list_download_btn"
+            android:layout_width="63.3dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_color" />
+
+    <!-- 按钮部分 -->
+
+    <LinearLayout
+        android:id="@+id/download_soft_list_btn_lay"
+        android:layout_width="match_parent"
+        android:layout_height="46.6dp" >
+
+        <!-- 取消按钮 -->
+
+        <TextView
+            android:id="@+id/download_soft_list_cancle_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/divider_color" />
+
+        <!-- 详情按钮 -->
+
+        <TextView
+            android:id="@+id/download_soft_list_details_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center"
+            android:text="@string/detials"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/download_soft_list_bottom_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_color" />
+
+</LinearLayout>

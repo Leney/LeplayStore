@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:leplay="http://schemas.android.com/apk/res-auto"
+                android:background="@color/title_bg2">
+
+    <FrameLayout
+        android:id="@+id/main_titile_user_icon_lay"
+        android:layout_width="36.3dp"
+        android:layout_height="36.3dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" >
+
+        <!-- 左边头像 -->
+
+        <com.xd.leplay.store.view.CustomImageView
+            android:id="@+id/main_titile_user_icon"
+            android:layout_width="33.3dp"
+            android:layout_height="33.3dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/user_icon_default"
+            leplay:type="circle" />
+
+        <!-- 有更新的指示红点 -->
+
+        <View
+            android:id="@+id/main_title_red_proint"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/circle_red_bg_shape" />
+    </FrameLayout>
+    <!-- 右边管理按钮部分 -->
+
+
+    <!--
+    <FrameLayout
+        android:id="@+id/main_titile_manage_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/main_title_manage_icon" />
+
+        <TextView
+            android:id="@+id/main_title_manage_num"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/circle_red_bg_shape"
+            android:gravity="center"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </FrameLayout>
+    -->
+
+    <ImageView
+        android:id="@+id/main_titile_download_cheats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/download_cheats" />
+    <!-- 右边下载按钮部分 -->
+
+    <FrameLayout
+        android:id="@+id/main_titile_download_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@+id/main_titile_download_cheats" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/main_title_download_icon" />
+
+        <TextView
+            android:id="@+id/main_title_download_num"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="end|top"
+            android:background="@drawable/circle_red_bg_shape"
+            android:gravity="center"
+            android:padding="0dp"
+            android:singleLine="true"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <!-- 中间搜索框 -->
+
+    <LinearLayout
+        android:id="@+id/main_title_search_edit_lay"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.3dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_toEndOf="@id/main_titile_user_icon_lay"
+        android:layout_toLeftOf="@id/main_titile_download_btn"
+        android:layout_toRightOf="@id/main_titile_user_icon_lay"
+        android:layout_toStartOf="@id/main_titile_download_btn"
+        android:background="@drawable/main_search_bg_shape"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="6.6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="6.6dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/main_title_search_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title_hint"
+            android:textColor="@color/tab_text_color" />
+    </LinearLayout>
+
+</RelativeLayout>

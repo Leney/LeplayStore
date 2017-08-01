@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/soft_list_item_lay"
+              style="@style/listItemSytle">
+
+    <!-- icon -->
+
+    <ImageView
+        android:id="@+id/soft_list_app_icon"
+        style="@style/listIconStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 下载按钮 -->
+
+            <com.xd.leplay.store.view.download.DownloadProgressButton
+                android:id="@+id/soft_list_download_btn"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <!-- 应用名称 -->
+
+            <TextView
+                android:id="@+id/soft_list_app_name"
+                style="@style/listNameStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/soft_list_download_btn"
+                android:layout_toStartOf="@id/soft_list_download_btn"
+                android:text="58同城"/>
+
+            <!-- 星级 -->
+
+            <RatingBar
+                android:id="@+id/soft_list_app_star"
+                style="@style/listRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/soft_list_app_name"
+                android:layout_marginTop="5dp"
+                android:numStars="5"
+                android:rating="3"/>
+
+            <!-- 标签1 -->
+
+            <TextView
+                android:id="@+id/soft_list_lab1"
+                style="@style/sigleTextStyle"
+                android:layout_below="@id/soft_list_app_name"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@id/soft_list_app_star"
+                android:layout_toRightOf="@id/soft_list_app_star"
+                android:text="lab1"/>
+
+            <!-- 标签2 -->
+
+            <TextView
+                android:id="@+id/soft_list_lab2"
+                style="@style/sigleTextStyle"
+                android:layout_below="@id/soft_list_app_name"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@id/soft_list_lab1"
+                android:layout_toRightOf="@id/soft_list_lab1"
+                android:text="lab2"/>
+        </RelativeLayout>
+
+        <!-- 描述 -->
+        <TextView
+            android:id="@+id/soft_list_describe_text"
+            style="@style/listDescribeStyle"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="不平凡的App,有你意想不到的折扣"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/get_cash_btn_select_bg_shape" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sign_in_btn_unenable_bg_shape" android:state_enabled="false"/>
+    <item android:drawable="@drawable/get_cash_btn_bg_shape"/>
+
+</selector>

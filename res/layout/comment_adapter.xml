@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:leplay="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white"
+                android:paddingTop="13dp">
+
+    <!-- 评论的用户头像 -->
+
+
+    <!--<com.donson.leplay.store.view.RoundImageView
+        android:id="@+id/comment_adapter_user_icon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:src="@drawable/default_icon" />-->
+
+    <com.xd.leplay.store.view.CustomImageView
+        android:id="@+id/comment_adapter_user_icon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:src="@drawable/user_icon_default"
+        leplay:type="circle" />
+
+    <!-- 评论的用户名称 -->
+
+    <TextView
+        android:id="@+id/comment_adapter_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/comment_adapter_user_icon"
+        android:layout_toRightOf="@id/comment_adapter_user_icon"
+        android:text="Jack chen"
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="12sp" />
+
+    <!-- 评论的时间 -->
+
+    <TextView
+        android:id="@+id/comment_adapter_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/comment_adapter_user_name"
+        android:layout_toRightOf="@id/comment_adapter_user_name"
+        android:gravity="end"
+        android:paddingRight="13dp"
+        android:text="2015-07-15"
+        android:textColor="@color/reget_code_text_color"
+        android:textSize="12sp" />
+
+    <!-- 评论星级 -->
+
+    <RatingBar
+        android:id="@+id/comment_adapter_comment_star"
+        style="@style/listRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_adapter_user_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/comment_adapter_user_icon"
+        android:layout_toRightOf="@id/comment_adapter_user_icon"
+        android:numStars="5"
+        android:rating="3" />
+
+    <!-- 评论具体内容 -->
+
+    <TextView
+        android:id="@+id/comment_adapter_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_adapter_comment_star"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/comment_adapter_user_icon"
+        android:layout_toRightOf="@id/comment_adapter_user_icon"
+        android:lineSpacingExtra="3dp"
+        android:paddingRight="13dp"
+        android:text="评论内容,评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容,122432,582546,aljsadfjlasfd ,评论内容评论内容评论内容"
+        android:textColor="@color/list_name_color"
+        android:textSize="13.3sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/comment_adapter_comment_content"
+        android:layout_marginTop="13dp"
+        android:background="@color/divider_color" />
+
+</RelativeLayout>

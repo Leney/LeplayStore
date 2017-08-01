@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/search_titile_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back_black_img" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_search_bg_shape" >
+
+            <!-- 清除文本按钮 -->
+
+            <ImageView
+                android:id="@+id/search_title_clear_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6.6dp"
+                android:layout_marginRight="6.6dp"
+                android:src="@drawable/search_clear_img"
+                android:visibility="gone" />
+
+            <!-- 搜索输入框 -->
+
+            <EditText
+                android:id="@+id/search_titile_input_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/search_title_clear_img"
+                android:layout_toStartOf="@id/search_title_clear_img"
+                android:background="@null"
+                android:hint="爱玩让你搜"
+                android:imeOptions="actionSearch"
+                android:maxLength="15"
+                android:paddingEnd="0dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="0dp"
+                android:paddingStart="3dp"
+                android:singleLine="true"
+                android:textColor="@color/tab_text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- 搜索按钮 -->
+
+        <ImageView
+            android:id="@+id/search_titile_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/main_title_search_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_color" />
+
+    <!-- 放置Fragment部分 -->
+
+    <FrameLayout
+        android:id="@+id/search_fragment_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

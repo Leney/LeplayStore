@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 时间 -->
+
+    <TextView
+        android:id="@+id/my_msg_adapter_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/msg_time_bg_shape"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="3dp"
+        android:text="今日"
+        android:textColor="@color/list_describle_color"
+        android:textSize="10sp" />
+
+    <!-- 消息正文文本 -->
+
+    <TextView
+        android:id="@+id/my_msg_adapter_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/incon_list_bg_shape"
+        android:lineSpacingExtra="5dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="20dp"
+        android:text="您于2015-12-25 15:28提交了80元的申请,已审核通过。提现金额已转入您的账户，请注意查收"
+        android:textColor="@color/list_name_color"
+        android:textSize="14.6sp" />
+
+</LinearLayout>

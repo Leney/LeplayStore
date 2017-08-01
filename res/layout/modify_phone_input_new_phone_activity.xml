@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingEnd="13.3dp"
+    android:paddingLeft="13.3dp"
+    android:paddingRight="13.3dp"
+    android:paddingStart="13.3dp" >
+
+    <!-- 新手机号码输入框1 -->
+
+    <EditText
+        android:id="@+id/modify_phone_new_phone_edit1"
+        style="@style/loginEditType"
+        android:layout_marginTop="33.3dp"
+        android:hint="@string/input_new_phone"
+        android:inputType="phone" />
+
+    <!-- 新手机号码输入框2 -->
+
+    <EditText
+        android:id="@+id/modify_phone_new_phone_edit2"
+        style="@style/loginEditType"
+        android:layout_marginTop="23.3dp"
+        android:hint="@string/input_new_phone_again"
+        android:inputType="phone" />
+
+    <!-- 登录按钮 -->
+
+    <Button
+        android:id="@+id/modify_phone_new_phone_sure_btn"
+        style="@style/blueBtnType"
+        android:layout_marginTop="33.3dp"
+        android:text="@string/sure" />
+
+</LinearLayout>

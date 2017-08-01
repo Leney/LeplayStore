@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="23.3dp"
+    android:paddingLeft="13.3dp"
+    android:paddingRight="13.3dp"
+    android:paddingTop="23.3dp" >
+
+    <!-- 星级 -->
+
+    <RatingBar
+        android:id="@+id/comment_dialog_star"
+        style="@style/commentRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <!-- 星级的文本描述 -->
+
+    <TextView
+        android:id="@+id/comment_dialog_star_describle"
+        style="@style/listDescribeStyle"
+        android:layout_marginTop="13.3dp"
+        android:text="@string/comment_rating_5"
+        android:textSize="16sp" />
+
+    <!-- 评论编辑框 -->
+
+    <EditText
+        android:id="@+id/comment_dialog_comment_input"
+        android:layout_width="match_parent"
+        android:layout_height="117.3dp"
+        android:layout_marginTop="23.3dp"
+        android:background="@drawable/login_edit_bg_shape"
+        android:gravity="top"
+        android:hint="@string/comment_input_hint"
+        android:lineSpacingExtra="3dp"
+        android:maxLength="50"
+        android:padding="13.3dp"
+        android:textColor="@color/list_name_color"
+        android:textSize="14.6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16.6dp" >
+
+        <Button
+            android:id="@+id/comment_dialog_cancle_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/gray_btn_bg_selector"
+            android:text="@string/cancle"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="21.3sp" />
+
+        <View
+            android:layout_width="13.3dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/comment_dialog_ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/blue_btn_bg_selector"
+            android:text="@string/sure"
+            android:textColor="@color/white"
+            android:textSize="21.3sp" />
+    </LinearLayout>
+
+</LinearLayout>

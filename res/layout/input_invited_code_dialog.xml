@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="33.3dp"
+    android:paddingLeft="13.3dp"
+    android:paddingRight="13.3dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center_vertical"
+        android:text="@string/invite_code_description"
+        android:textColor="@color/invite_code_description_color"
+        android:textSize="18sp" />
+    <!-- 邀请码输入框 -->
+
+    <EditText
+        android:id="@+id/invite_code_input"
+        style="@style/loginEditType"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/isinput_invited_code_"
+        android:maxLength="11" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/ignore_submit_btn"
+            style="@style/blueBtnType"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/button_unenable_color"
+            android:text="@string/ignore_submit_btn"
+            android:textColor="@color/ignore_submit_btn_text_color" />
+
+        <Button
+            android:id="@+id/confirm_name_submit_btn"
+            style="@style/blueBtnType"
+            android:layout_width="0dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@color/confirm_name_submit_btn_color"
+            android:text="@string/confirm_name_submit_btn" />
+    </LinearLayout>
+
+</LinearLayout>

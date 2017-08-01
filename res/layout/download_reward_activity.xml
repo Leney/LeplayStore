@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:leplay="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/mydownload__title_lay"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/mydownload__title_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_black_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mydownload_search_edit_lay"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.3dp"
+            android:layout_marginRight="8.3dp"
+            android:background="@drawable/main_search_bg_shape"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="6.6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="6.6dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/main_title_search_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_title_hint"
+                android:textColor="@color/tab_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@color/manager_bg_color"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:id="@+id/download_reward_user_icon_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="86.6dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp" >
+
+            <com.xd.leplay.store.view.CustomImageView
+                android:id="@+id/download_reward_user_icon"
+                android:layout_width="86.6dp"
+                android:layout_height="86.6dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_icon_default"
+                leplay:type="circle" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/download_reward_level" />
+
+            <TextView
+                android:id="@+id/download_reward_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:text="@string/level_name_5"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/download_reward_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp" >
+
+                <TextView
+                    android:id="@+id/already_gain_coin_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:singleLine="true"
+                    android:text="@string/download_reward_record_already_gain"
+                    android:textColor="@color/list_name_color"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/show_off"
+                        android:textColor="@color/indicator_normal_text_color"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/download_reward_share_wx_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/download_reward_share_wx" />
+
+                    <ImageView
+                        android:id="@+id/download_reward_share_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/download_reward_share_qq" />
+
+                    <ImageView
+                        android:id="@+id/download_reward_share_wx_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/download_reward_share_wx_friend" />
+
+                    <ImageView
+                        android:id="@+id/download_reward_share_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/download_reward_share_more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/download_reward_app_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="@string/download_reward_app_num"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- 再下载5个应用，可以获得60金币的奖励 -->
+
+            <TextView
+                android:id="@+id/download_app_gain_extra_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="@string/download_app_gain_extra_reward"
+                android:textColor="@color/download_reward_rule"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 放置Fragment部分 -->
+
+    <FrameLayout
+        android:id="@+id/download_reward_fragment_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

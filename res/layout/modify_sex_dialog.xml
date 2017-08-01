@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="33.3dp" >
+
+    <RadioGroup
+        android:id="@+id/modify_sex_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="96.6dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!-- 男 -->
+
+        <RadioButton
+            android:id="@+id/modify_sex_radio_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/ridio_btn_selector"
+            android:checked="true"
+            android:paddingEnd="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:paddingStart="10dp"
+            android:text="@string/man"
+            android:textColor="@color/radio_textcolor_selector"
+            android:textSize="14.6dp" />
+        <!-- 女 -->
+
+        <RadioButton
+            android:id="@+id/modify_sex_radio_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="66.6dp"
+            android:layout_marginStart="66.6dp"
+            android:button="@drawable/ridio_btn_selector"
+            android:paddingEnd="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:paddingStart="10dp"
+            android:text="@string/woman"
+            android:textColor="@color/radio_textcolor_selector"
+            android:textSize="14.6dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/modify_sex_submit_btn"
+        style="@style/blueBtnType"
+        android:layout_marginEnd="13.3dp"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginStart="13.3dp"
+        android:text="@string/submit" />
+
+</LinearLayout>

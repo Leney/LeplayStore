@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingEnd="13.3dp"
+    android:paddingLeft="13.3dp"
+    android:paddingRight="13.3dp"
+    android:paddingStart="13.3dp" >
+
+    <!-- 使用方法 -->
+
+    <TextView
+        android:id="@+id/gift_dialog_use_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26.6dp"
+        android:layout_marginTop="26.6dp"
+        android:lineSpacingExtra="5dp"
+        android:text="使用方法：进入《梦幻西游》游戏，点击“活动” 按钮>礼包兑换>输入礼包兑换码>兑换成功"
+        android:textColor="@color/list_describle_color"
+        android:textSize="13.3sp" />
+
+    <!-- 显示兑换码区域 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/redeem_code"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="13.3sp" />
+        <!-- 兑换码 -->
+
+        <TextView
+            android:id="@+id/gift_dialog_redeem_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:ellipsize="end"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="@string/redeem_code"
+            android:textColor="@color/redeem_code_text_color"
+            android:textSize="13.3sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gift_dialog_copy_redeem_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="13.3dp"
+        android:background="@drawable/get_redeem_code_btn_bg_shape"
+        android:text="@string/copy_code"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

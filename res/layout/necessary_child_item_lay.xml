@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/necessary_child_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/item_bg_selector"
+        android:gravity="center_vertical"
+        android:paddingBottom="13.3dp"
+        android:paddingTop="13.3dp" >
+
+        <!-- icon -->
+
+        <ImageView
+            android:id="@+id/necessary_child_app_icon"
+            style="@style/listIconStyle" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 下载按钮 -->
+
+            <com.xd.leplay.store.view.download.DownloadProgressButton
+                android:id="@+id/necessary_child_download_btn"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/necessary_child_download_btn"
+                android:layout_toStartOf="@id/necessary_child_download_btn"
+                android:orientation="vertical" >
+
+                <!-- 应用名称 -->
+
+                <TextView
+                    android:id="@+id/necessary_child_app_name"
+                    style="@style/listNameStyle"
+                    android:text="58同城" />
+
+                <!-- 下载次数和软件大小 -->
+
+                <TextView
+                    android:id="@+id/necessary_child_download_count_and_size"
+                    style="@style/listSizeDesStyle"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="1722万次下载|116.44M" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

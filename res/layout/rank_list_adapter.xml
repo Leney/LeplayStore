@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/listItemSytle" >
+
+    <TextView
+        android:id="@+id/rank_list_rank_num"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="999"
+        android:textSize="16sp" />
+    <!-- icon -->
+
+    <ImageView
+        android:id="@+id/rank_list_app_icon"
+        style="@style/listIconStyle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 下载按钮 -->
+
+        <com.xd.leplay.store.view.download.DownloadProgressButton
+            android:id="@+id/rank_list_download_btn"
+            android:layout_width="66.6dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+
+        <!-- 做任务标识按钮 -->
+        <TextView
+            android:id="@+id/rank_list_do_task_text"
+            android:layout_width="66.6dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/task_state_btn_bg1_shape"
+            android:gravity="center"
+            android:text="做任务"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/rank_list_download_btn"
+            android:layout_toStartOf="@id/rank_list_download_btn"
+            android:orientation="vertical" >
+
+            <!-- 应用名称 -->
+
+            <TextView
+                android:id="@+id/rank_list_app_name"
+                style="@style/listNameStyle"
+                android:text="58同城" />
+
+            <!-- 下载次数和软件大小 -->
+
+            <TextView
+                android:id="@+id/rank_list_download_count_and_size"
+                style="@style/listSizeDesStyle"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="1722万次下载|116.44M" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

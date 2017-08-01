@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/red_packet_password_input_bg_color" >
+
+        <com.xd.leplay.store.view.OvalView
+            android:id="@+id/OvalView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            custom:canvasColor="@color/white"
+            custom:paintColor="@color/red_packet_password_input_bg_color" />
+
+        <LinearLayout
+            android:id="@+id/redPacketDetailCoinsLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="95dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/redPacketDetailCoins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/red_packet_detail_coins"
+                android:textColor="@color/white"
+                android:textSize="53.33sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/red_packet_detail_coins_unit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/inviteFriendPickPacket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/red_packet_detail_pick_btn" />
+
+</LinearLayout>

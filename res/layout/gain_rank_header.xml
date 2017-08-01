@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:leplay="http://schemas.android.com/apk/res-auto"
+              android:background="@color/redeem_code_text_color"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingTop="22.3dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gain_rank_img" />
+
+    <!-- 用户信息部分 -->
+
+    <LinearLayout
+        android:id="@+id/gain_rank_user_info_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 我的排名 -->
+
+        <TextView
+            android:id="@+id/gain_rank_my_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="我的排名：55"
+            android:textColor="@color/white"
+            android:textSize="14.6sp" />
+        <!-- 我的称号 -->
+
+        <TextView
+            android:id="@+id/gain_rank_my_level_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="我的称号：超级玩家"
+            android:textColor="@color/white"
+            android:textSize="14.6sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.6dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <!-- 左下角暗黄色角标图片 -->
+
+        <View
+            android:layout_width="6.6dp"
+            android:layout_height="5.6dp"
+            android:background="@drawable/gain_rank_right_icon" />
+        <!-- 第二名 -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="182dp"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/white_half_corner_bg_shape" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6.6dp"
+                android:src="@drawable/gain_rank_second_crown" />
+
+            <!-- 第二名的头像 -->
+
+
+            <!--
+                 <com.donson.leplay.store.view.RoundImageView
+                android:id="@+id/gain_rank_second_user_icon"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40.6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/user_icon_default" />
+            -->
+
+            <com.xd.leplay.store.view.CustomImageView
+                android:id="@+id/gain_rank_second_user_icon"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40.6dp"
+                android:src="@drawable/user_icon_default"
+                leplay:outCircleColor="#dddddd"
+                leplay:outCircleWidth="1dp"
+                leplay:type="circle" />
+
+            <!-- 第二名名称 -->
+
+            <TextView
+                android:id="@+id/gain_rank_second_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gain_rank_second_user_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:text="梦中那段纠结"
+                android:textColor="@color/list_name_color"
+                android:textSize="12sp" />
+
+            <!-- 第二名金额 -->
+
+            <TextView
+                android:id="@+id/gain_rank_second_user_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gain_rank_second_user_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/treasure_history_coin"
+                android:drawableStart="@drawable/treasure_history_coin"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="3688"
+                android:textColor="@color/redeem_code_text_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <!-- 第一名 -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="182dp"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="53.4dp"
+                android:background="@drawable/white_half_corner_bg_shape" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/gain_rank_first_crown" />
+
+            <!-- 第一名的头像 -->
+
+
+            <!--
+                 <com.donson.leplay.store.view.RoundImageView
+                android:id="@+id/gain_rank_first_user_icon"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/user_icon_default" />
+            -->
+
+            <com.xd.leplay.store.view.CustomImageView
+                android:id="@+id/gain_rank_first_user_icon"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:src="@drawable/user_icon_default"
+                leplay:outCircleColor="#dddddd"
+                leplay:outCircleWidth="1dp"
+                leplay:type="circle" />
+
+            <!-- 第一名名称 -->
+
+            <TextView
+                android:id="@+id/gain_rank_first_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gain_rank_first_user_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:text="妲己虽美终是妃子"
+                android:textColor="@color/list_name_color"
+                android:textSize="12sp" />
+
+            <!-- 第一名金额 -->
+
+            <TextView
+                android:id="@+id/gain_rank_first_user_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gain_rank_first_user_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/treasure_history_coin"
+                android:drawableStart="@drawable/treasure_history_coin"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="5999"
+                android:textColor="@color/redeem_code_text_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <!-- 第三名 -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="182dp"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="67dp"
+                android:background="@drawable/white_half_corner_bg_shape" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13.6dp"
+                android:src="@drawable/gain_rank_third_crown" />
+
+            <!-- 第三名的头像 -->
+
+
+            <!--
+                 <com.donson.leplay.store.view.RoundImageView
+                android:id="@+id/gain_rank_third_user_icon"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="47.6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/user_icon_default" />
+            -->
+
+            <com.xd.leplay.store.view.CustomImageView
+                android:id="@+id/gain_rank_third_user_icon"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="47.6dp"
+                android:src="@drawable/user_icon_default"
+                leplay:outCircleColor="#dddddd"
+                leplay:outCircleWidth="1dp"
+                leplay:type="circle" />
+
+            <!-- 第三名名称 -->
+
+            <TextView
+                android:id="@+id/gain_rank_third_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gain_rank_third_user_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:singleLine="true"
+                android:text="情绪控"
+                android:textColor="@color/list_name_color"
+                android:textSize="12sp" />
+
+            <!-- 第三名金额 -->
+
+            <TextView
+                android:id="@+id/gain_rank_third_user_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gain_rank_third_user_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/treasure_history_coin"
+                android:drawableStart="@drawable/treasure_history_coin"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="2899"
+                android:textColor="@color/redeem_code_text_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        <!-- 右下角暗黄色角标图片 -->
+
+        <View
+            android:layout_width="6.6dp"
+            android:layout_height="5.6dp"
+            android:background="@drawable/gain_rank_left_icon" />
+    </LinearLayout>
+</LinearLayout>

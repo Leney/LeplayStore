@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="canvasColor" format="color" />
+    <attr name="paintColor" format="color" />
+    <attr name="paintStroke" format="dimension" />
+    
+    <declare-styleable name="OvalView">
+        <attr name="canvasColor" />
+        <attr name="paintColor" />
+        <attr name="paintStroke" />
+    </declare-styleable>
+
+</resources>

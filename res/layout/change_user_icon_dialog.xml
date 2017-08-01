@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingEnd="13.3dp"
+    android:paddingLeft="13.3dp"
+    android:paddingRight="13.3dp"
+    android:paddingStart="13.3dp" >
+
+    <!-- 拍照 -->
+
+    <LinearLayout
+        android:id="@+id/change_user_icon_camera_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="26.6dp"
+        android:background="@drawable/change_user_icon_bg_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/camera"
+            android:drawablePadding="13.3dp"
+            android:drawableStart="@drawable/camera"
+            android:text="@string/camera"
+            android:textColor="@color/light_red_color_1"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- 相册 -->
+
+    <LinearLayout
+        android:id="@+id/change_user_icon_photo_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="26.6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/change_user_icon_bg_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/photo"
+            android:drawablePadding="13.3dp"
+            android:drawableStart="@drawable/camera"
+            android:text="@string/photos"
+            android:textColor="@color/light_red_color_1"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

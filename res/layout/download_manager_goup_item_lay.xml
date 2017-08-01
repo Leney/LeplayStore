@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <!-- group名称 -->
+
+        <TextView
+            android:id="@+id/download_group_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="下载中(2)"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="16sp" />
+
+        <!-- 右边按钮(全部安装) -->
+
+        <TextView
+            android:id="@+id/download_group_item_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/install_all"
+            android:textColor="@color/list_describle_color"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</FrameLayout>

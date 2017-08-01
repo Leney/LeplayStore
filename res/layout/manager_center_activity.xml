@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:leplay="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <!-- 顶部信息部分 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:background="@drawable/personal_top_bg" >
+
+        <!-- 用户名称 -->
+
+        <TextView
+            android:id="@+id/manager_center_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47.33dp"
+            android:text="@string/please_login"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <!-- 头像 -->
+
+        <com.xd.leplay.store.view.CustomImageView
+            android:id="@+id/manager_center_user_icon"
+            android:layout_width="106.6dp"
+            android:layout_height="106.6dp"
+            android:layout_above="@+id/manager_center_user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/user_icon_default"
+            leplay:outCircleColor="#8988ed"
+            leplay:outCircleWidth="3dp"
+            leplay:type="circle" />
+    </RelativeLayout>
+
+    <!-- 金币和我的礼包按钮部分 -->
+    <!--
+        <LinearLayout
+            android:id="@+id/manager_center_coins_and_gifts_lay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/personal_top_bg" >
+
+            金币
+
+            <LinearLayout
+                android:id="@+id/manager_center_my_coins_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/manager_my_gifts_btn_selector"
+                android:gravity="center" >
+
+                金币数量
+
+                <TextView
+                    android:id="@+id/manager_center_my_coins_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/coin"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/coin"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/manager_gifts_down" />
+
+            我的礼包
+
+            <LinearLayout
+                android:id="@+id/manager_center_my_gifts_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/manager_my_gifts_btn_selector"
+                android:gravity="center" >
+
+                我的礼包数量
+
+                <TextView
+                    android:id="@+id/manager_center_my_gifts_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/refresh_coin_icon"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/refresh_coin_icon"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:text="@string/refresh_coins"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@color/white"
+        android:orientation="horizontal" 
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/manager_cener_about_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/manager_about_us"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:text="@string/about_us"
+            android:textColor="@color/list_name_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/manager_cener_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/manager_feedback"
+            android:paddingLeft="18dp"
+            android:paddingRight="15dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/feedback"
+            android:textColor="@color/list_name_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6.6dp"
+        android:background="@color/main_color" />
+    <!-- 底部按钮部分   第一行 -->
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/manager_center_bottom_line1"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        下载应用
+
+        <FrameLayout
+            android:id="@+id/manager_cener_download_app_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="28dp"
+                android:paddingTop="28dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/manager_download_app"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/download_app"
+                    android:textColor="@color/manager_text_color"
+                    android:textSize="18sp" />
+            </FrameLayout>
+            下载数量角标
+
+            <TextView
+                android:id="@+id/manager_cener_download_num"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/circle_red_bg_shape"
+                android:gravity="center"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+        更新应用
+
+        <FrameLayout
+            android:id="@+id/manager_cener_update_app_lay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="28dp"
+                android:paddingTop="28dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/manager_update_app"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/update_app"
+                    android:textColor="@color/manager_text_color"
+                    android:textSize="18sp" />
+            </FrameLayout>
+            更新数量角标
+
+            <TextView
+                android:id="@+id/manager_cener_update_num"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="end|top"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/circle_red_bg_shape"
+                android:gravity="center"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+        管理应用
+
+        <TextView
+            android:id="@+id/manager_cener_manager_app"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="12dp"
+            android:drawableTop="@drawable/manager_app"
+            android:gravity="center"
+            android:paddingBottom="28dp"
+            android:paddingTop="28dp"
+            android:singleLine="true"
+            android:text="@string/manager_app"
+            android:textColor="@color/manager_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/manager_center_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_color" />
+    底部按钮部分   第二行
+
+    <LinearLayout
+        android:id="@+id/manager_center_bottom_line2"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        检查更新
+
+        <TextView
+            android:id="@+id/manager_cener_check_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="12dp"
+            android:drawableTop="@drawable/manager_check_update"
+            android:gravity="center"
+            android:paddingBottom="28dp"
+            android:paddingTop="28dp"
+            android:singleLine="true"
+            android:text="@string/check_update"
+            android:textColor="@color/manager_text_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+        关于我们
+
+        <TextView
+            android:id="@+id/manager_cener_about_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="12dp"
+            android:drawableTop="@drawable/manager_about_us"
+            android:gravity="center"
+            android:paddingBottom="28dp"
+            android:paddingTop="28dp"
+            android:singleLine="true"
+            android:text="@string/about_us"
+            android:textColor="@color/manager_text_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_color" />
+        意见反馈
+
+        <TextView
+            android:id="@+id/manager_cener_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="12dp"
+            android:drawableTop="@drawable/manager_feedback"
+            android:gravity="center"
+            android:paddingBottom="28dp"
+            android:paddingTop="28dp"
+            android:singleLine="true"
+            android:text="@string/feedback"
+            android:textColor="@color/manager_text_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6.6dp"
+        android:background="@color/main_color" />
+
+
+    -->
+
+    <com.xd.leplay.store.view.MarketListView
+        android:id="@+id/managerCenterList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

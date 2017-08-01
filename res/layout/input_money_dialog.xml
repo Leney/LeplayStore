@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_center_dialog_bg_shape"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    android:paddingTop="30dp" >
+
+    <!-- 输入兑换金额的输入框 -->
+
+    <EditText
+        android:id="@+id/my_purse_exchange_money_input"
+        android:layout_width="313.3dp"
+        android:layout_height="53.3dp"
+        android:background="@drawable/login_edit_bg_shape"
+        android:hint="您当前最多可提现36元"
+        android:inputType="numberDecimal"
+        android:paddingLeft="13.3dp"
+        android:singleLine="true"
+        android:textColor="@color/list_name_color"
+        android:textSize="13.3sp" />
+
+    <!-- 提交按钮 -->
+
+    <Button
+        android:id="@+id/my_purse_submit_btn"
+        android:layout_width="313.3dp"
+        android:layout_height="53.3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_btn_bg_shape"
+        android:singleLine="true"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textSize="21.3sp" />
+
+    <TextView
+        android:layout_width="313.3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/got_money_proint"
+        android:textColor="#d43939"
+        android:textSize="12sp" />
+
+</LinearLayout>

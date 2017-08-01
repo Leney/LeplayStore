@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line" >
+
+    <!--
+          android:dashGap  空隙宽度
+    	  android:dashWidth 实体线宽度
+    -->
+    <stroke
+        android:dashGap="3dp"
+        android:dashWidth="5dp"
+        android:width="1dp"
+        android:color="#dddddd" />
+    <!-- 虚线的高度 -->
+    <size android:height="2dp" />
+
+</shape>

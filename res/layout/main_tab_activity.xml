@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg2"
+    android:orientation="vertical" >
+
+    <!-- 标题部分 -->
+
+    <com.xd.leplay.store.view.MainTitleView
+        android:id="@+id/main_tab_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" />
+
+    <RadioGroup
+        android:id="@+id/main_tab_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="66.6dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_tab_1"
+            style="@style/radioStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/tab1_selector"
+            android:text="@string/tab1" />
+
+        <RadioButton
+            android:id="@+id/main_tab_2"
+            style="@style/radioStyle"
+            android:drawableTop="@drawable/tab3_selector"
+            android:text="@string/tab3" />
+
+        <RadioButton
+            android:id="@+id/main_tab_3"
+            style="@style/radioStyle"
+            android:drawableTop="@drawable/tab4_selector"
+            android:text="@string/tab4" />
+    </RadioGroup>
+
+    <!-- 放置Fragment部分 -->
+
+    <FrameLayout
+        android:id="@+id/main_tab_fragment_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab_radioGroup"
+        android:layout_below="@id/main_tab_title_view" />
+
+    <!-- 主页底部Tab部分 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_above="@id/main_tab_radioGroup"
+        android:background="@drawable/tab_bottom_line" />
+
+</RelativeLayout>

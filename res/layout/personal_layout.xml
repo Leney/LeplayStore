@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:leplay="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- 头像、用户名、更换头像 显示区域 -->
+
+        <LinearLayout
+            android:id="@+id/personal_user_info_lay"
+            android:layout_width="match_parent"
+            android:layout_height="106.66dp"
+            android:background="@drawable/personal_top_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <!-- 头像 -->
+
+            <com.xd.leplay.store.view.CustomImageView
+                android:id="@+id/personal_user_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user_icon_default"
+                leplay:outCircleColor="@color/personal_head_image_border_color"
+                leplay:outCircleWidth="1.33dp"
+                leplay:type="circle" />
+
+            <RelativeLayout
+                android:id="@+id/personal_user_name_and_coins_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" >
+
+                <!-- 用户名 -->
+
+                <TextView
+                    android:id="@+id/personal_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="超级玩家2015"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- "更换头像" -->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/personal_right_arrows" />
+
+                <!-- 金币数 -->
+
+
+                <!--
+                     <TextView
+                    android:id="@+id/personal_user_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/personal_user_name"
+                    android:layout_marginTop="10dp"
+                    android:text="1258 金币"
+                    android:textColor="@color/redeem_code_text_color"
+                    android:textSize="16sp" />
+
+
+                -->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--
+             <View
+            android:layout_width="match_parent"
+            android:layout_height="6.6dp"
+            android:background="@color/main_color" />
+
+
+        -->
+
+
+        <!-- 我的等级 -->
+
+        <RelativeLayout
+            android:id="@+id/personal_grade_lay"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <!-- 我的等级 -->
+
+            <TextView
+                android:id="@+id/personal_my_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我的等级"
+                android:textColor="@color/list_name_color"
+                android:textSize="16sp" />
+
+            <!-- 我的等级显示文本 -->
+
+            <TextView
+                android:id="@+id/personal_my_grade_text"
+                android:layout_width="wrap_content"
+                android:layout_height="26.6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.6dp"
+                android:layout_marginStart="6.6dp"
+                android:layout_toEndOf="@id/personal_my_grade"
+                android:layout_toRightOf="@id/personal_my_grade"
+                android:background="@drawable/my_grade_bg"
+                android:gravity="center"
+                android:paddingEnd="6dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="6dp"
+                android:paddingStart="12dp"
+                android:text="冒险玩家"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <!-- 已提现 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13.3dp"
+                android:layout_marginStart="13.3dp"
+                android:layout_toEndOf="@id/personal_my_grade_text"
+                android:layout_toRightOf="@id/personal_my_grade_text"
+                android:gravity="center_vertical|end" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/already_get_cash"
+                    android:textColor="@color/list_describle_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/personal_get_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="888.8"
+                    android:textColor="@color/redeem_code_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+        <!-- 等级数量显示区域 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="299"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="499"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1999"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!-- 等级进度条 显示区域 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:gravity="center" >
+
+                <!-- 0~99的进度条 -->
+
+                <ProgressBar
+                    android:id="@+id/personal_level_progress_1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="3.3dp"
+                    android:layout_weight="1"
+                    android:max="99"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_line_bg" />
+                <!-- 99~299的进度条 -->
+
+                <ProgressBar
+                    android:id="@+id/personal_level_progress_2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="3.3dp"
+                    android:layout_weight="1"
+                    android:max="200"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_line_bg" />
+                <!-- 299~499的进度条 -->
+
+                <ProgressBar
+                    android:id="@+id/personal_level_progress_3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="3.3dp"
+                    android:layout_weight="1"
+                    android:max="200"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_line_bg" />
+                <!-- 499~999的进度条 -->
+
+                <ProgressBar
+                    android:id="@+id/personal_level_progress_4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="3.3dp"
+                    android:layout_weight="1"
+                    android:max="500"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_line_bg" />
+                <!-- 999~1999的进度条 -->
+
+                <ProgressBar
+                    android:id="@+id/personal_level_progress_5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="3.3dp"
+                    android:layout_weight="1"
+                    android:max="1000"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_line_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/personal_grade_img1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/personal_lv_comed" />
+
+                <ImageView
+                    android:id="@+id/personal_grade_img2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/personal_lv_comed" />
+
+                <ImageView
+                    android:id="@+id/personal_grade_img3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/personal_lv_comed" />
+
+                <ImageView
+                    android:id="@+id/personal_grade_img4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/personal_lv_comed" />
+
+                <ImageView
+                    android:id="@+id/personal_grade_img5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/personal_lv_comed" />
+
+                <ImageView
+                    android:id="@+id/personal_grade_img6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/personal_lv_comed" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- 玩家等级显示部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="31dp"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="true"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/personal_grade_player1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_blue_bg_shape"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/player1"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/personal_grade_player2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_blue_bg_shape"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/player2"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/personal_grade_player3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_blue_bg_shape"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/player3"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/personal_grade_player4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_blue_bg_shape"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/player4"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/personal_grade_player5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_blue_bg_shape"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/player5"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/personal_grade_player6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle_blue_bg_shape"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/player6"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6.6dp"
+            android:background="@color/main_color" />
+
+        <!-- 更改绑定手机 -->
+
+        <FrameLayout
+            android:id="@+id/personal_change_phone_num_lay"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <TextView
+                android:id="@+id/modify_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/phone_text"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/personal_change_phone_num_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:drawableEnd="@drawable/right_proint"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_proint"
+                android:singleLine="true"
+                android:text="138****7526"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+        <!-- 更改绑定手机 -->
+
+        <FrameLayout
+            android:id="@+id/personal_bind_WeiXin_Lay"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <TextView
+                android:id="@+id/bound_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/weixin_text"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/weixin_bind_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:drawableEnd="@drawable/right_proint"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_proint"
+                android:singleLine="true"
+                android:text="@string/click_bind"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+        <!-- 昵称 -->
+
+        <FrameLayout
+            android:id="@+id/personal_change_nick_name_lay"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/nick_name"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/personal_change_nick_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:drawableEnd="@drawable/right_proint"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_proint"
+                android:singleLine="true"
+                android:text="超级玩家2015"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <!-- 性别 -->
+
+        <FrameLayout
+            android:id="@+id/personal_change_sex_lay"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/sex"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/personal_change_sex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:drawableEnd="@drawable/right_proint"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/right_proint"
+                android:singleLine="true"
+                android:text="男"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <!-- 修改密码 -->
+
+
+        <!--
+             <TextView
+            android:id="@+id/personal_change_pwd_text"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:drawableEnd="@drawable/right_proint"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_proint"
+            android:gravity="center_vertical"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp"
+            android:singleLine="true"
+            android:text="@string/change_pwd"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="16sp" />
+
+
+        -->
+
+
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+                             退出帐号
+
+        <TextView
+            android:id="@+id/personal_exit_account_text"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:drawableEnd="@drawable/right_proint"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_proint"
+            android:gravity="center_vertical"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="13.3dp"
+            android:singleLine="true"
+            android:text="@string/exit_account"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="16sp" />
+
+
+        -->
+    </LinearLayout>
+
+</ScrollView>

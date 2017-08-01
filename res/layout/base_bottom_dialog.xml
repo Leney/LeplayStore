@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/base_bottom_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingEnd="0dp"
+        android:paddingLeft="13.3dp"
+        android:paddingRight="0dp"
+        android:paddingStart="13.3dp"
+        android:text="@string/warm_prompt"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_color" />
+
+    <!-- 中间视图 -->
+
+    <FrameLayout
+        android:id="@+id/base_bottom_dialog_center_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/base_bottom_dialog_content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="33.3dp"
+            android:layout_marginTop="33.3dp"
+            android:lineSpacingExtra="3dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="13.3dp"
+            android:paddingRight="0dp"
+            android:paddingStart="13.3dp"
+            android:text="显示提示内容..."
+            android:textColor="@color/list_name_color"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/base_bottom_dialog_btn_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="33.3dp"
+        android:paddingLeft="13.3dp"
+        android:paddingRight="13.3dp" >
+
+        <!-- 底部左边的按钮 -->
+
+        <TextView
+            android:id="@+id/base_bottom_dialog_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/gray_btn_round_bg_selector"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/list_describle_color"
+            android:textSize="21.3sp" />
+
+        <View
+            android:id="@+id/base_bottom_dialog_empty_line"
+            android:layout_width="26.6dp"
+            android:layout_height="match_parent" />
+        <!-- 底部右边的按钮 -->
+
+        <TextView
+            android:id="@+id/base_bottom_dialog_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_btn_round_bg_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="21.3sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/base_bottom_dialog_left_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/base_bottom_dialog_bottom_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/list_describle_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

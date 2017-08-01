@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <!-- 历史记录部分 -->
+
+    <FrameLayout
+        android:id="@+id/search_keys_history_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/search_history"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="13.3dp" />
+
+        <TextView
+            android:id="@+id/search_history_clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:text="@string/clear"
+            android:textColor="@color/list_describle_color"
+            android:textSize="13.3dp" />
+    </FrameLayout>
+
+    <com.xd.leplay.store.gui.search.view.SearchItemsLayout
+        android:id="@+id/search_history_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"/>
+
+    <!-- 应用部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/search_keys_app_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/application"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="13.3dp" />
+
+        <!-- 应用item放置区域 -->
+
+        <LinearLayout
+            android:id="@+id/search_keys_app_keys_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <!-- 游戏部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/game"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="13.3dp" />
+
+        <!-- 游戏item放置区域 -->
+
+        <LinearLayout
+            android:id="@+id/search_keys_game_keys_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <!-- 换一批 -->
+
+    <FrameLayout
+        android:id="@+id/search_keys_change_others_lay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="13.3dp"
+        android:layout_marginLeft="57.3dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginStart="57.3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/item_bg_selector" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/search_change_other"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/search_change_other"
+            android:gravity="center"
+            android:text="@string/change_keys"
+            android:textColor="@color/list_describle_color"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</LinearLayout>

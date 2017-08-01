@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="43.3dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gain_rank_adapter_item_lay"
+        android:layout_width="match_parent"
+        android:layout_height="43.3dp"
+        android:background="@color/gray_btn_normal_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/gain_rank_adapter_rank_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="4"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/gain_rank_adapter_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="老娘不在发情期"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/gain_rank_adapter_user_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="5999"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

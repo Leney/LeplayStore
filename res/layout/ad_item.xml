@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical">
+    <com.xd.leplay.store.view.AdRelativeLayout
+        android:id="@+id/soft_list_item_lay"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/item_bg_selector">
+        <!-- icon -->
+        <ImageView
+            android:id="@+id/ad_list_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/ad_list_icon"
+            android:layout_toRightOf="@id/ad_list_icon">
+            <!-- 主标题 -->
+            <TextView
+                android:id="@+id/ad_list_main_tilte"
+                style="@style/listNameStyle"
+                android:text="58同城"/>
+
+            <!-- 描述(副标题) -->
+            <TextView
+                android:id="@+id/ad_list_sec_title"
+                style="@style/listDescribeStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="不平凡的App,有你意想不到的折扣"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ad_list_ad_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#88666666"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:text="@string/ad"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+    </com.xd.leplay.store.view.AdRelativeLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/show_ad_lay"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent">
+
+        <com.xd.leplay.store.view.AdImageView
+            android:id="@+id/show_ad_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/show_ad_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="广告描第三方斯蒂芬斯蒂芬斯蒂芬斯蒂芬斯蒂芬森斯蒂芬斯蒂芬斯夫述"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:background="@color/ad_des_bg"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/close_ad_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:src="@drawable/search_clear_img"/>
+
+        <ImageView
+            android:id="@+id/show_ad_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/app_icon"/>
+
+        <TextView
+            android:id="@+id/show_ad_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="#88666666"
+            android:paddingBottom="1dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="1dp"
+            android:text="@string/ad"
+            android:textColor="@color/white"
+            android:textSize="11sp"/>
+    </FrameLayout>
+</LinearLayout>

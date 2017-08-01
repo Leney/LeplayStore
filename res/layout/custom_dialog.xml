@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_dialog_all_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/custom_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50.6dp"
+        android:background="@drawable/loading_dialog_top_bg_shape"
+        android:gravity="center_vertical"
+        android:paddingLeft="13.3dp"
+        android:paddingRight="13.3dp"
+        android:text="标题"
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/custom_dialog_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_color" />
+
+    <!-- 中间视图部分 -->
+
+    <LinearLayout
+        android:id="@+id/custom_dialog_center_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+</LinearLayout>

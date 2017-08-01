@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical" >
+
+    <!-- 顶部Banner部分 -->
+
+    <com.xd.leplay.store.view.BannerView
+        android:id="@+id/applicaition_boutique_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="106.6dp" />
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83.3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="3.3dp"
+        android:paddingRight="3.3dp" >
+
+        <ImageView
+            android:id="@+id/application_boutique_left_ad_img"
+            android:layout_width="0dp"
+            android:layout_height="73.3dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/application_header_left_lay" />
+
+        <View
+            android:layout_width="3.3dp"
+            android:layout_height="1dp" />
+
+        <ImageView
+            android:id="@+id/application_boutique_right_ad_img"
+            android:layout_width="0dp"
+            android:layout_height="73.3dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/super_gain" />
+    </LinearLayout>
+
+    -->
+
+   <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/application_boutique_left_ad_img"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="6.66dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="6.66dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/application_header_left_lay" />
+
+        <ImageView
+            android:id="@+id/application_boutique_right_ad_img"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/super_gain" />
+    </LinearLayout>
+ -->
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_titile_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bg2" >
+
+    <!-- 左边点击返回区域 -->
+
+    <LinearLayout
+        android:id="@+id/child_tilte_back_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical" >
+
+        <!-- 返回按钮 -->
+
+        <ImageView
+            android:id="@+id/child_title_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_black_img" />
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/child_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="标题"
+            android:textColor="@color/title_name_color2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/child_title_right_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/child_tilte_back_lay"
+        android:gravity="center_vertical|right"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/child_title_right_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settting" />
+
+        <ImageView
+            android:id="@+id/child_title_right_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/settting" />
+
+        <!-- 文本按钮 -->
+
+        <TextView
+            android:id="@+id/child_title_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="文本按钮"
+            android:textColor="@color/login_text_color_selector"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 按钮底部的一条分割线 -->
+
+    <View
+        android:id="@+id/child_title_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/divider_color" />
+
+</RelativeLayout>

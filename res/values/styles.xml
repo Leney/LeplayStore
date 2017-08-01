@@ -1,0 +1,286 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/splash_screen_img</item>
+    </style>
+
+    <style name="radioStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/tab_textcolor_selector</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <declare-styleable name="SlidingTabStrip">
+        <attr name="bottomBackground" format="color"></attr>
+        <attr name="dividerColor" format="color"></attr>
+        <attr name="nomalTextColor" format="color"></attr>
+        <attr name="selectedTextColor" format="color"></attr>
+        <attr name="titleTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 大部分按钮的统一样式 -->
+    <style name="button_style">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/button_bg_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">21.3dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 列表item的样式 -->
+    <style name="listItemSytle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">91dp</item>
+        <item name="android:background">@drawable/item_bg_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">13.3dp</item>
+        <item name="android:paddingTop">13.3dp</item>
+    </style>
+    <!-- 列表item的样式2 -->
+    <style name="listItemSytle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/item_bg_selector</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">13.3dp</item>
+        <item name="android:paddingTop">13.3dp</item>
+    </style>
+
+    <!-- 列表icon的统一样式 -->
+    <style name="listIconStyle">
+        <item name="android:layout_width">@dimen/list_icon_width</item>
+        <item name="android:layout_height">@dimen/list_icon_height</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:src">@drawable/default_icon</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 列表应用名称的统一样式 -->
+    <style name="listNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_name_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 列表应用大小描述的统一样式1 -->
+    <style name="listSizeDesStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_describle_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 列表应用大小描述的统一样式2 -->
+    <style name="listDescribeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/list_soft_describe_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 列表下载按钮进度条样式 -->
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progress_downloading_bg</item>
+    </style>
+
+    <!-- 列表RatingBar样式 -->
+    <style name="listRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_layer_list</item>
+        <item name="android:minHeight">13dp</item>
+        <item name="android:maxHeight">13dp</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <!-- 评论RatingBar样式 -->
+    <style name="commentRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/comment_ratingbar_layer_list</item>
+        <item name="android:minHeight">26.6dp</item>
+        <item name="android:maxHeight">26.6dp</item>
+    </style>
+
+    <!-- 标签样式 -->
+    <style name="sigleTextStyle">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">17.3dp</item>
+        <item name="android:background">@drawable/lab_gift_bg_shape</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">6.6dp</item>
+    </style>
+
+    <!-- 线条样式下载进度条 -->
+    <style name="progressBarLineStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progress_line_bg</item>
+    </style>
+
+    <!-- 线条样式强制更新下载进度条 -->
+    <style name="progressBarLineStyle2" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progress_line_bg2</item>
+    </style>
+
+    <!-- 设置名称统一样式 -->
+    <style name="setting_name_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_name_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">13.3dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 设置界面  描述的文本统一样式 -->
+    <style name="setting_describle_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_describle_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">13.3dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!-- 登录编辑框样式 -->
+    <style name="loginEditType">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46.6dp</item>
+        <item name="android:background">@drawable/login_edit_bg_shape</item>
+        <item name="android:paddingLeft">13.3dp</item>
+        <item name="android:textColor">@color/list_name_color</item>
+        <item name="android:textSize">14.6sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 蓝色点击按钮的样式 -->
+    <style name="blueBtnType">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/blue_btn_bg_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">21.3sp</item>
+    </style>
+
+    <style name="bottomDialogStyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!-- 礼包详情底部文本名称统一样式 -->
+    <style name="gift_detail_name_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_name_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">13.3dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 礼包详情底部描述文本统一样式 -->
+    <style name="gift_detail_describle_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/list_describle_color</item>
+        <item name="android:textSize">10.6sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:layout_marginBottom">13.3dp</item>
+    </style>
+
+    <!-- 列表icon的统一样式 -->
+    <style name="gain_coins_icon_style">
+        <item name="android:layout_width">56.6dp</item>
+        <item name="android:layout_height">56.6dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">13.3dp</item>
+    </style>
+
+    <!-- 对话框主题 -->
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="RedPacketPasswordInputStyle" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 去除动画变化中间过程的黑色背景 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 广告弹出框动画-->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+</resources>

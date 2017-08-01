@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/listItemSytle2" >
+
+    <!-- icon -->
+
+    <ImageView
+        android:id="@+id/search_result_list_app_icon"
+        style="@style/listIconStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 下载按钮 -->
+
+            <com.xd.leplay.store.view.download.DownloadProgressButton
+                android:id="@+id/search_result_list_download_btn"
+                android:layout_width="66.6dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp" />
+
+            <!-- 应用名称 -->
+
+            <TextView
+                android:id="@+id/search_result_list_app_name"
+                style="@style/listNameStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@id/search_result_list_download_btn"
+                android:layout_toStartOf="@id/search_result_list_download_btn"
+                android:text="58同城" />
+
+            <!-- 星级 -->
+
+            <RatingBar
+                android:id="@+id/search_result_list_app_star"
+                style="@style/listRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/search_result_list_app_name"
+                android:layout_marginTop="5dp"
+                android:numStars="5"
+                android:rating="3" />
+        </RelativeLayout>
+
+        <!-- 下载次数和软件大小 -->
+
+        <TextView
+            android:id="@+id/search_result_download_count_and_size_text"
+            style="@style/listSizeDesStyle"
+            android:layout_marginTop="4dp"
+            android:text="1722万人下载|116.44M" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical" >
+
+            <!-- 奖励金币数量 -->
+
+            <TextView
+                android:id="@+id/search_result_list_coin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="17.6dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/soft_list_coin_bg_shape"
+                android:gravity="center"
+                android:paddingLeft="6.6dp"
+                android:paddingRight="6.6dp"
+                android:text="奖励5金币"
+                android:textColor="@color/list_soft_coin_color"
+                android:textSize="10sp" />
+            <!-- 描述 -->
+
+            <TextView
+                android:id="@+id/search_result_list_describe_text"
+                style="@style/listDescribeStyle"
+                android:text="不平凡的App,有你意想不到的折扣" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

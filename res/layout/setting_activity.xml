@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 当前网络 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="57.3dp" >
+
+            <TextView
+                style="@style/setting_name_style"
+                android:text="@string/cur_net_status" />
+
+            <TextView
+                android:id="@+id/setting_cur_net_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="13.3dp"
+                android:layout_marginRight="13.3dp"
+                android:text="WLAN"
+                android:textColor="@color/indicator_color"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="13.3dp"
+            android:layout_marginLeft="13.3dp"
+            android:layout_marginRight="13.3dp"
+            android:layout_marginStart="13.3dp"
+            android:background="@drawable/divider_color" />
+
+        <!-- 无图省流量模式 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76.6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/setting_name_style"
+                    android:text="@string/no_pic_model" />
+
+                <CheckBox
+                    android:id="@+id/setting_no_pic_on_off_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:button="@drawable/setting_on_off_btn_selector" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/setting_describle_style"
+                android:text="@string/no_pic_model_des" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6.6dp"
+            android:background="@color/main_color" />
+
+        <!-- 删除安装包 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76.6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/setting_name_style"
+                    android:text="@string/delete_apk" />
+
+                <CheckBox
+                    android:id="@+id/setting_delete_apk_on_off_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:button="@drawable/setting_on_off_btn_selector" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/setting_describle_style"
+                android:text="@string/delete_apk_des" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="13.3dp"
+            android:layout_marginLeft="13.3dp"
+            android:layout_marginRight="13.3dp"
+            android:layout_marginStart="13.3dp"
+            android:background="@drawable/divider_color" />
+
+        <!-- 安装包下载位置 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76.6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_name_style"
+                android:text="@string/apk_location" />
+
+            <TextView
+                android:id="@+id/setting_apk_loaction"
+                style="@style/setting_describle_style"
+                android:text="/storage/emulated/0/donson/downloadApk" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6.6dp"
+            android:background="@color/main_color" />
+
+        <!-- Wifi下自动更新 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76.6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/setting_name_style"
+                    android:text="@string/auto_update_when_wifi" />
+
+                <CheckBox
+                    android:id="@+id/setting_auto_update_on_off_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:button="@drawable/setting_on_off_btn_selector" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/setting_describle_style"
+                android:text="@string/auto_update_when_wifi_des" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="13.3dp"
+            android:layout_marginLeft="13.3dp"
+            android:layout_marginRight="13.3dp"
+            android:layout_marginStart="13.3dp"
+            android:background="@drawable/divider_color" />
+        <!-- 接收内容推荐提醒 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="76.6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/setting_name_style"
+                    android:text="@string/receiver_push_msg" />
+
+                <CheckBox
+                    android:id="@+id/setting_push_on_off_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:button="@drawable/setting_on_off_btn_selector" />
+            </FrameLayout>
+
+            <TextView
+                style="@style/setting_describle_style"
+                android:text="@string/receiver_push_msg_des" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6.6dp"
+            android:background="@color/main_color" />
+        <!-- 清除本地缓存 -->
+        <LinearLayout
+            android:id="@+id/setting_clear_local_cancle_lay"
+            android:layout_width="match_parent"
+            android:layout_height="76.6dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/setting_name_style"
+                android:text="@string/clear_cancle" />
+
+            <TextView
+                style="@style/setting_describle_style"
+                android:text="@string/clear_cancle_des" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

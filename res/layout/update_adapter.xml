@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/listItemSytle"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <!-- icon -->
+
+        <ImageView
+            android:id="@+id/update_app_icon"
+            style="@style/listIconStyle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- 应用名称 -->
+
+            <TextView
+                android:id="@+id/update_app_name"
+                style="@style/listNameStyle"
+                android:text="58同城" />
+
+            <!-- 版本和大小文本 -->
+
+            <TextView
+                android:id="@+id/update_codename_and_size_text"
+                style="@style/listDescribeStyle"
+                android:layout_marginTop="5dp"
+                android:text="4.0.2-->4.0.3   116.4M"
+                android:textColor="@color/button_unenable_text_color"
+                android:textSize="10.6sp" />
+            <!-- 更新此应用的百分比 -->
+
+            <TextView
+                android:id="@+id/update_percent_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="99%的人已更新"
+                android:textColor="@color/percent_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <!-- 下载按钮 -->
+
+        <com.xd.leplay.store.view.download.DownloadProgressButton
+            android:id="@+id/update_download_btn"
+            android:layout_width="66.6dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <!-- 更新说明部分 -->
+
+    <LinearLayout
+        android:id="@+id/update_decrible_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp" >
+
+        <!-- 更新说明 -->
+
+        <TextView
+            android:id="@+id/update_decrible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="2dp"
+            android:maxLines="1"
+            android:text="更新说明:萨弗拉基斯蒂芬撒旦法斯蒂芬的说法撒旦发射点发萨芬萨芬撒发射点发"
+            android:textColor="@color/button_unenable_text_color"
+            android:textSize="12sp" />
+
+        <!-- 指示图标(收缩/展开) -->
+
+        <ImageView
+            android:id="@+id/update_point_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="23.3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="23.3dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3.5dp"
+            android:src="@drawable/down_point" />
+    </LinearLayout>
+
+    <!-- 发布时间、忽略按钮部分 -->
+
+    <LinearLayout
+        android:id="@+id/update_publish_and_ignore_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp" >
+
+        <!-- 发布时间 -->
+
+        <TextView
+            android:id="@+id/update_publish_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发布时间：2015-07-01"
+            android:textColor="@color/button_unenable_text_color"
+            android:textSize="12sp" />
+
+        <!-- 忽略应用 -->
+
+        <TextView
+            android:id="@+id/update_ignore_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/ignore_update"
+            android:textColor="@color/button_unenable_text_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

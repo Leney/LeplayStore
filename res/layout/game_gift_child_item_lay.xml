@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg_selector"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/game_gift_child_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16.6dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="16.6dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gift_circle" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- 礼包名称 -->
+
+            <TextView
+                android:id="@+id/game_gift_child_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="500元暑假作业中级礼包"
+                android:textColor="@color/list_name_color"
+                android:textSize="14.6sp" />
+
+            <!-- 礼包描述 -->
+
+            <TextView
+                android:id="@+id/game_gift_child_gift_decrible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="梦幻西游祝福油50血精石(大)20魔晶石(大)"
+                android:textColor="@color/list_describle_color"
+                android:textSize="10.6sp" />
+        </LinearLayout>
+
+        <!-- 抢礼包/复制 按钮部分 -->
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" >
+
+            <!-- 抢礼包按钮 -->
+
+            <Button
+                android:id="@+id/game_gift_child_get_gift_btn"
+                android:layout_width="63.3dp"
+                android:layout_height="30dp"
+                android:background="@drawable/less_red_btn_bg_selector"
+                android:text="@string/grab_gift"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <!-- 复制按钮 -->
+
+            <Button
+                android:id="@+id/game_gift_child_copy_gift_btn"
+                android:layout_width="63.3dp"
+                android:layout_height="30dp"
+                android:background="@drawable/less_red_btn_bg_selector"
+                android:text="@string/copy"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

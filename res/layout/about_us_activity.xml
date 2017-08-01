@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="33.3dp"
+            android:paddingTop="33.3dp" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/app_icon" />
+
+            <!-- 名称和版本号 -->
+
+            <TextView
+                android:id="@+id/about_us_name_and_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="爱玩商店 v1.0.0"
+                android:textColor="@color/list_name_color"
+                android:textSize="18sp" />
+
+            <!-- 发布日期 -->
+
+
+            <!--
+                 <TextView
+                android:id="@+id/about_us_publish_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/app_publish_date"
+                android:textColor="@color/list_describle_color"
+                android:textSize="12sp" />
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_us_bottom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <!-- 客服电话 -->
+
+            <LinearLayout
+                android:id="@+id/about_us_telephone_lay"
+                android:layout_width="match_parent"
+                android:layout_height="73.3dp"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="13.3dp"
+                android:paddingRight="13.3dp" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:src="@drawable/about_us_tle_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/about_us_tel_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="1582525696"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/service_tel_num_des"
+                        android:textColor="@color/list_describle_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+            <!-- 用户粉丝群 -->
+
+            <!--<LinearLayout
+                android:id="@+id/about_us_fans_qq_group_lay"
+                android:layout_width="match_parent"
+                android:layout_height="73.3dp"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="13.3dp"
+                android:paddingRight="13.3dp" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:src="@drawable/about_us_qq_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/about_us_fans_qq_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="52566454"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/fans_qq_group_num_des"
+                        android:textColor="@color/list_describle_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />-->
+            <!-- 爱玩商店微信公众号 -->
+
+            <LinearLayout
+                android:id="@+id/about_us_weixin_public_account_lay"
+                android:layout_width="match_parent"
+                android:layout_height="73.3dp"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="13.3dp"
+                android:paddingRight="13.3dp" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:src="@drawable/about_us_weixin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/about_us_weixin_public_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="aiwanshangdian"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/weixin_public_account_des"
+                        android:textColor="@color/list_describle_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+            <!-- 爱玩商店公司邮箱 -->
+
+            <LinearLayout
+                android:id="@+id/about_us_aiwan_email_lay"
+                android:layout_width="match_parent"
+                android:layout_height="73.3dp"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="13.3dp"
+                android:paddingRight="13.3dp" >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="13.3dp"
+                    android:layout_marginRight="13.3dp"
+                    android:src="@drawable/about_us_email" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/about_us_aiwan_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="service@aiwan.hk"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/aiwan_email_des"
+                        android:textColor="@color/list_describle_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66.6dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aiwan_reserved"
+                    android:textColor="@color/list_describle_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/aiwan_reserved_en"
+                    android:textColor="@color/list_describle_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

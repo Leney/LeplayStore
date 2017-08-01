@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="26.6dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/feed_back_top_des"
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="16sp" />
+
+    <!-- 意见输入框 -->
+
+    <EditText
+        android:id="@+id/feed_back_input"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="16.6dp"
+        android:background="@drawable/login_edit_bg_shape"
+        android:gravity="top"
+        android:hint="@string/feed_back_input_hint"
+        android:maxLength="200"
+        android:padding="10dp"
+        android:textColor="@color/list_name_color"
+        android:textSize="16sp" />
+
+    <!-- 提交按钮 -->
+
+    <Button
+        android:id="@+id/feed_back_submit_btn"
+        style="@style/blueBtnType"
+        android:layout_marginTop="26.6dp"
+        android:text="@string/submit" />
+
+</LinearLayout>

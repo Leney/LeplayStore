@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.xd.leplay.store.view.MarketListView
+        android:id="@+id/ignore_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/tab_bottom_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="66.6dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/ignore_all_btn"
+            style="@style/blueBtnType"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:text="@string/uningnore_all" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="33.3dp"
+    android:paddingLeft="13.3dp"
+    android:paddingRight="13.3dp" >
+
+    <!-- 手机号码输入框 -->
+
+    <EditText
+        android:id="@+id/modify_nick_name_edit"
+        style="@style/loginEditType"
+        android:layout_marginBottom="23.3dp"
+        android:layout_marginTop="33.3dp"
+        android:hint="@string/modify_nick_name_hint"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/modify_nick_name_submit_btn"
+        style="@style/blueBtnType"
+        android:text="@string/submit" />
+
+</LinearLayout>

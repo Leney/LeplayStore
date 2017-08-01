@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="366.67dp"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:background="@drawable/red_packet_dialog_top_corner_bg_shape"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/shutDownDialogLay"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/shut_down_btn" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/red_packet_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:singleLine="true"
+        android:text="@string/red_packet_dialog_main_title"
+        android:textColor="@color/red_packet_dialog_title_clolr"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/red_packet_second_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="@string/red_packet_dialog_second_title"
+        android:textColor="@color/red_packet_dialog_title_clolr"
+        android:textSize="28sp" />
+
+    <FrameLayout
+        android:id="@+id/redPacketDialogBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/red_packet_dialog_bottom_corner_bg_shape" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/red_packet_dialog_top_bg_color" />
+
+        <com.xd.leplay.store.view.OvalView
+            android:id="@+id/OvalView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            custom:canvasColor="@color/red_packet_dialog_bottom_bg_color"
+            custom:paintColor="@color/red_packet_dialog_top_bg_color"
+            custom:paintStroke="10dp" />
+
+        <ImageView
+            android:id="@+id/openRedPacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/red_packet_open" />
+    </FrameLayout>
+
+</LinearLayout>

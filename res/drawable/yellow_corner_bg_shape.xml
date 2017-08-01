@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <stroke
+        android:width="0.66dp"
+        android:color="@color/download_reward_rank_get_coin_frame" />
+
+    <corners android:radius="3dp" />
+
+</shape>

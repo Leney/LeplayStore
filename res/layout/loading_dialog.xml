@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/loading_dialog_bg_shape"
+    android:gravity="center" >
+
+    <com.xd.leplay.store.view.CircleProgressView
+        android:id="@+id/loading_dialog_circlProgress"
+        android:layout_width="31dp"
+        android:layout_height="31dp" />
+
+    <TextView
+        android:id="@+id/loading_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.6dp"
+        android:layout_marginStart="16.6dp"
+        android:text="加载中..."
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="16sp" />
+
+</LinearLayout>

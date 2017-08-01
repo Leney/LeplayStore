@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/gift_detail_app_lay"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- icon -->
+
+            <ImageView
+                android:id="@+id/gift_detail_app_icon"
+                style="@style/listIconStyle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- 下载按钮 -->
+
+                <com.xd.leplay.store.view.download.DownloadProgressButton
+                    android:id="@+id/gift_detail_download_btn"
+                    android:layout_width="66.6dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/gift_detail_download_btn"
+                    android:layout_toStartOf="@id/gift_detail_download_btn"
+                    android:orientation="vertical" >
+
+                    <!-- 应用名称 -->
+
+                    <TextView
+                        android:id="@+id/gift_detail_app_name"
+                        style="@style/listNameStyle"
+                        android:text="58同城" />
+
+                    <!-- 下载次数和软件大小 -->
+
+                    <TextView
+                        android:id="@+id/gift_detail_download_count_and_size"
+                        style="@style/listSizeDesStyle"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="1722万次下载|116.44M" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/gift_detail_top_split_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <!-- 显示礼包数字的区域 -->
+
+        <LinearLayout
+            android:id="@+id/gift_detail_gifts_num_title_lay"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <!-- 第一个礼包的数字标题 -->
+
+            <TextView
+                android:id="@+id/gift_detail_num_title1"
+                android:layout_width="27.3dp"
+                android:layout_height="27.3dp"
+                android:layout_marginEnd="13.3dp"
+                android:layout_marginLeft="13.3dp"
+                android:layout_marginRight="13.3dp"
+                android:layout_marginStart="13.3dp"
+                android:background="@drawable/circle_gray_bg_shape"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- 礼包名称 -->
+
+        <TextView
+            android:id="@+id/gift_detail_gift_name"
+            style="@style/gift_detail_name_style"
+            android:text="500元暑假作业中级礼包" />
+        <!-- 有效期 -->
+
+        <TextView
+            android:id="@+id/gift_detail_gift_vaile_date"
+            style="@style/gift_detail_describle_style"
+            android:text="有效期：07月-16日 至 09月15日" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <!-- 礼包内容 -->
+
+        <TextView
+            style="@style/gift_detail_name_style"
+            android:text="@string/gift_content" />
+        <!-- 礼包内容具体描述 -->
+
+        <TextView
+            android:id="@+id/gift_detail_gift_content_describle"
+            style="@style/gift_detail_describle_style"
+            android:text="闪电星星*1、5888金币、超狂热驱动*3、核弹*3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <!-- 领取资格 -->
+
+        <TextView
+            style="@style/gift_detail_name_style"
+            android:text="@string/get_gift_eligibility" />
+        <!-- 领取资格具体描述 -->
+
+        <TextView
+            android:id="@+id/gift_detail_get_gift_eligibility_describle"
+            style="@style/gift_detail_describle_style"
+            android:text="注册时间是2015年07月01日后的新玩家" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <!-- 领取方式 -->
+
+        <TextView
+            style="@style/gift_detail_name_style"
+            android:text="@string/get_gift_way" />
+        <!-- 领取方式具体描述 -->
+
+        <TextView
+            android:id="@+id/gift_detail_get_gift_way_describle"
+            style="@style/gift_detail_describle_style"
+            android:text="1、萨芬的鹿角商店街发牢骚随风倒\n2、诶i饿了可累积的时间饿了就可\n3、量净额阿达司法解释了丰富历史交锋" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <!-- 显示兑换码区域 -->
+
+        <LinearLayout
+            android:id="@+id/gift_detail_show_code_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/redeem_code"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="14sp" />
+            <!-- 兑换码 -->
+
+            <TextView
+                android:id="@+id/gift_detail_redeem_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/main_color"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@string/redeem_code"
+                android:textColor="@color/redeem_code_text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gift_detail_get_redeem_code_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="13.3dp"
+            android:background="@drawable/less_red_btn_bg_selector"
+            android:text="复制兑换码"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</ScrollView>

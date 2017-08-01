@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/red_packe_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="23dp"
+        android:singleLine="true"
+        android:text="@string/have_red_packet"
+        android:textColor="#da5050"
+        android:textSize="29.3sp" />
+
+    <TextView
+        android:id="@+id/gain_money_share_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="8dp"
+        android:text="将红包分享给好友,并成功注册爱玩商店帐号,您即可获得 10 元奖励"
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/gain_money_share_now_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/login_btn_bg_shape"
+        android:singleLine="true"
+        android:text="@string/share_now"
+        android:textColor="#ffffff"
+        android:textSize="21.3dp" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 任务  未开始 按钮背景 -->
+    <corners android:radius="40dp" />
+
+    <stroke
+        android:width="2px"
+        android:color="#dddddd" />
+
+    <solid android:color="#ffffff" />
+
+</shape>

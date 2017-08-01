@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 时间 -->
+
+    <TextView
+        android:id="@+id/got_cash_reward_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:paddingBottom="10dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="20dp"
+        android:text="2016-01-28"
+        android:textColor="@color/list_describle_color"
+        android:textSize="13.3sp" />
+    <!-- 信息部分 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53.3dp"
+        android:background="#ffffff"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp" >
+
+        <!-- 提现方式名称 -->
+
+        <TextView
+            android:id="@+id/got_cash_reward_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="微信钱包"
+            android:textColor="@color/title_name_color2"
+            android:textSize="18sp" />
+
+        <!-- 提现状态 -->
+
+        <TextView
+            android:id="@+id/got_cash_reward_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/got_cash_status_btn_bg_shape2"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:text="审核中"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <!-- 提现金额 -->
+
+        <TextView
+            android:id="@+id/got_cash_reward_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25.3dp"
+            android:layout_marginRight="25.3dp"
+            android:layout_toLeftOf="@id/got_cash_reward_status"
+            android:layout_toStartOf="@id/got_cash_reward_status"
+            android:text="10.0元"
+            android:textColor="@color/title_name_color2"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/got_cash_reward_adapter_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/divider_color" />
+    <!-- 备注说明 -->
+    <TextView
+        android:id="@+id/got_cash_reward_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="6dp"
+        android:text="审核不通过，雷克萨弗拉索芙嘉老师打飞机受到法律弗拉索的方法是发声方法阿萨德地方艾丝凡防水防撒撒反对"
+        android:textColor="#e36c6c"
+        android:textSize="13.3sp" />
+
+</LinearLayout>

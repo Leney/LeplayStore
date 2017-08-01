@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_color"
+              android:orientation="vertical">
+
+    <!-- 顶部Banner部分 -->
+
+    <com.xd.leplay.store.view.BannerView
+        android:id="@+id/recommed_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"/>
+
+    <!--<LinearLayout
+        android:id="@+id/recommend_ads_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">-->
+    <FrameLayout
+        android:id="@+id/recommend_left_banner_ad_lay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <com.xd.leplay.store.view.AdImageView
+            android:id="@+id/recommend_left_banner_ad_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/recommend_left_banner_ad_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="#88666666"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="1dp"
+            android:text="@string/ad"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+    </FrameLayout>
+    <!--<ImageView
+        android:id="@+id/recommend_right_banner_ad_img"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <com.donson.leplay.store.view.CustomMarqueeTextView
+            android:id="@+id/custom_marquee_textview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/notice_corner_bg_shape"
+            android:drawableLeft="@drawable/horn"
+            android:drawablePadding="10dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯跑马灯"
+            android:textColor="@color/horn_text_color"
+            android:textSize="12sp" />
+    </LinearLayout>-->
+
+</LinearLayout>

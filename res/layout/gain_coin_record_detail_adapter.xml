@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/coin_record_detail_group_top_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="6.6dp"
+        android:background="@color/main_color" />
+    <!-- 日期 -->
+
+    <TextView
+        android:id="@+id/coin_record_detail_adapter_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:background="@color/main_color"
+        android:paddingBottom="13dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="16dp"
+        android:text="2016年01月28日"
+        android:textColor="@color/button_unenable_text_color"
+        android:textSize="13.3sp" />
+
+</LinearLayout>

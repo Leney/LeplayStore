@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="133.3dp"
+        android:background="@drawable/my_purse_top_bg" >
+
+        <ImageView
+            android:id="@+id/my_purse_top_monety_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:src="@drawable/my_purse_icon" />
+
+        <View
+            android:id="@+id/my_purse_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/my_purse_top_monety_img"
+            android:layout_toRightOf="@id/my_purse_top_monety_img" />
+        <!-- 兑换规则 -->
+
+        <TextView
+            android:id="@+id/my_purse_exchange_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/my_purse_empty_view"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@id/my_purse_top_monety_img"
+            android:layout_toRightOf="@id/my_purse_top_monety_img"
+            android:singleLine="true"
+            android:text="100金币=1元"
+            android:textColor="@color/purse_top_text_color"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_purse_empty_view"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@id/my_purse_top_monety_img"
+            android:layout_toRightOf="@id/my_purse_top_monety_img"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_coins"
+                android:textColor="#ffffff"
+                android:textSize="21.3sp" />
+
+            <!-- 我的金币 -->
+
+            <TextView
+                android:id="@+id/my_purse_my_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="21.3sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 可提现、已提现部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/my_purse_top_bg" >
+
+        <!-- 可提现 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#10000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <!-- 可提现金额 -->
+
+            <TextView
+                android:id="@+id/my_purse_cur_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="28.20元"
+                android:textColor="@color/purse_top_text_color"
+                android:textSize="21.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="可提现"
+                android:textColor="#e32525"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#15000000" />
+        <!-- 已提现 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#10000000"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <!-- 可提现金额 -->
+
+            <TextView
+                android:id="@+id/my_purse_got_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="311.56元"
+                android:textColor="@color/purse_top_text_color"
+                android:textSize="21.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已提现"
+                android:textColor="#e32525"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 申请提现按钮 -->
+
+    <Button
+        android:id="@+id/my_pursh_apply_cash_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/get_cash_btn_bg_selector"
+        android:text="@string/apply_cash"
+        android:textColor="#ffffff"
+        android:textSize="21.3sp" />
+
+    <!-- 收入明细列表 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/incon_list_bg_shape"
+        android:orientation="vertical" >
+
+        <!-- 任务下载收入 -->
+
+        <RelativeLayout
+            android:id="@+id/my_purse_income_type_1"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp" >
+
+            <ImageView
+                android:id="@+id/my_purse_download_income_1_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_proint" />
+
+            <TextView
+                android:id="@+id/my_purse_download_income_1_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/donwload_income"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/my_purse_income_money_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/my_purse_download_income_1_left"
+                android:layout_toLeftOf="@id/my_purse_download_income_1_right"
+                android:layout_toRightOf="@id/my_purse_download_income_1_left"
+                android:layout_toStartOf="@id/my_purse_download_income_1_right"
+                android:singleLine="true"
+                android:text="180元"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/divider_color" />
+        <!-- 签到抽奖收入 -->
+
+        <RelativeLayout
+            android:id="@+id/my_purse_income_type_2"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp" >
+
+            <ImageView
+                android:id="@+id/my_purse_download_income_2_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_proint" />
+
+            <TextView
+                android:id="@+id/my_purse_download_income_2_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/sign_and_lottery_income"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/my_purse_income_money_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/my_purse_download_income_2_left"
+                android:layout_toLeftOf="@id/my_purse_download_income_2_right"
+                android:layout_toRightOf="@id/my_purse_download_income_2_left"
+                android:layout_toStartOf="@id/my_purse_download_income_2_right"
+                android:singleLine="true"
+                android:text="180元"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/divider_color" />
+        <!-- 邀请奖励收入 -->
+
+        <RelativeLayout
+            android:id="@+id/my_purse_income_type_3"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp" >
+
+            <ImageView
+                android:id="@+id/my_purse_download_income_3_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_proint" />
+
+            <TextView
+                android:id="@+id/my_purse_download_income_3_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/invite_income"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/my_purse_income_money_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/my_purse_download_income_3_left"
+                android:layout_toLeftOf="@id/my_purse_download_income_3_right"
+                android:layout_toRightOf="@id/my_purse_download_income_3_left"
+                android:layout_toStartOf="@id/my_purse_download_income_3_right"
+                android:singleLine="true"
+                android:text="180元"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/divider_color" />
+        <!-- 其他奖励收入 -->
+
+        <RelativeLayout
+            android:id="@+id/my_purse_income_type_4"
+            android:layout_width="match_parent"
+            android:layout_height="53.3dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp" >
+
+            <ImageView
+                android:id="@+id/my_purse_download_income_4_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/right_proint" />
+
+            <TextView
+                android:id="@+id/my_purse_download_income_4_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/other_income"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/my_purse_income_money_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/my_purse_download_income_4_left"
+                android:layout_toLeftOf="@id/my_purse_download_income_4_right"
+                android:layout_toRightOf="@id/my_purse_download_income_4_left"
+                android:layout_toStartOf="@id/my_purse_download_income_4_right"
+                android:singleLine="true"
+                android:text="180元"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 微信好友 -->
+
+        <TextView
+            android:id="@+id/share_weixin_friends_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_weixin_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="@string/weixin_friends"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="14sp" />
+
+        <!-- 微信朋友圈 -->
+
+        <TextView
+            android:id="@+id/share_weixin_friends_circle_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_weixin_pengyou_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="@string/weixin_friends_circle"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="14sp" />
+        <!-- QQ好友 -->
+
+        <TextView
+            android:id="@+id/share_qq_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_qq_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="@string/qq_friends"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <!-- QQ空间 -->
+
+        <TextView
+            android:id="@+id/share_sina_weibo_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_qzone_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="@string/qzone"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="14sp" />
+
+        <!-- 更多分享方式 -->
+
+        <TextView
+            android:id="@+id/share_more_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_bg_selector"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_more_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="@string/share_more"
+            android:textColor="@color/list_soft_describe_color"
+            android:textSize="14sp" />
+
+        <!-- 占位图片 -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_weixin_pengyou_icon"
+            android:gravity="center_horizontal"
+            android:text="@string/weixin_friends_circle"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

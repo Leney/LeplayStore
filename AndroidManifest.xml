@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.xd.leplay.store"
+          android:versionCode="12"
+          android:versionName="V1.2.1">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <!-- 移除快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <!-- 查询快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+
+    <!-- 科大讯飞接入权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+
+
+    <application
+        android:name="com.xd.leplay.store.LeplayApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/NoActionBar"
+        tools:replace="android:icon, android:theme">
+        <!-- 友盟数据统计配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56823e5ce0f55ac3e7002df2"/>
+
+        <!-- 科大讯飞接入配置-->
+        <meta-data android:name="IFLYTEK_APPKEY_AD" android:value="58d9d690"/>
+
+        <activity
+            android:name=".gui.main.FullScreenAdActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_MARKET"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 主页 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!-- 全局的接收应用安装、卸载、替换安装的广播 -->
+        <receiver android:name="com.xd.leplay.store.control.AppInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <!-- 自定义的通知栏按钮点击事件的响应广播 -->
+        <receiver android:name="com.xd.leplay.store.control.NotifyBtnClickReceiver">
+            <intent-filter>
+                <action android:name="com.donson.leplay.store.ACTION_NOTIFY_UPDATE_ALL_BTN_CLICK"/>
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 管理中心 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.manager.ManagerCenterActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 应用管理 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.manager.ManageAppActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 下载任务管理 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.download.DownloadManagerActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 详情界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.details.DetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 详情截图全屏界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.details.ScreenShortDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 新品首发界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.recommend.NewFirstActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 玩赚金币界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.recommend.GetCoinActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 搜索界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.search.SearchActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.manager.SettingActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- 注册登录界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 个人中心界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.personal.PersonalCenterActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 修改密码界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.personal.ModifyPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 更改绑定手机获取验证码界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.personal.ModifyPhoneGetCodeActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 更改绑定手机输入新的手机号界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.personal.ModifyPhoneInputNewNumActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 忘记密码 获取验证码界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.login.LostPwdGetCodeActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 忘记密码 输入新的密码界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.login.LostPwdInputNewPwdActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 应用分类详情界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.application.ApplicationClassifyDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- WebView界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.webview.WebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 微信公众帐号网页界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.webview.WeixinPublicAccountWebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 每日抽奖网页界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.webview.LotteryWebViewActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 更新应用/忽略应用界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.manager.update.UpdateAppActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 礼包详情界面(本地已有数据) -->
+        <activity
+            android:name="com.xd.leplay.store.gui.game.GiftDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 礼包详情界面(从网络获取礼包详情数据) -->
+        <activity
+            android:name="com.xd.leplay.store.gui.game.GiftDetailActivity2"
+            android:screenOrientation="portrait"/>
+
+        <!-- 我的礼包界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.game.MyGiftsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 赚取金币界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.GainCoinsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 意见反馈界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.manager.FeedBackActivivty"
+            android:screenOrientation="portrait"/>
+
+        <!-- 关于我们界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.manager.AboutUsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 我的钱包界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.MyPurseActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 邀请好友界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.InviteFriendsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 赚取金币记录界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.GainCoinsRecordActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 收入排行界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.GainsRankActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 下载奖励界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.DownloadRewardActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 我的消息界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.MyMessageActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 提现记录界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.GotCashRewardActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 提现成功分享界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.GainMonneySuccessShareActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 收入详情界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.GainCoinsRecordDetailActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 引导界面 -->
+        <activity
+            android:name="com.xd.leplay.store.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 微信登录授权 -->
+        <activity
+            android:name="com.xd.leplay.store.wxapi.WXEntryActivity"
+            android:exported="true"/>
+        <!-- 红包口令输入界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.RedPacketPasswordInputActivity"
+            android:theme="@style/RedPacketPasswordInputStyle"/>
+        <!-- 红包详情界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.RedPacketDetailActivity"
+            android:theme="@style/RedPacketPasswordInputStyle"/>
+        <!-- 邀请二维码界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.treasure.InviteQdActivity"
+            android:theme="@style/RedPacketPasswordInputStyle"/>
+        <!-- 全屏广告界面 -->
+        <!--<activity
+            android:name="com.xd.leplay.store.gui.main.FullScreenAdActivity"
+            android:theme="@style/RedPacketPasswordInputStyle"/>-->
+        !-- 网页广告界面 -->
+        <activity
+            android:name="com.xd.leplay.store.gui.webview.AdWebViewActivity"
+            android:theme="@style/RedPacketPasswordInputStyle"/>
+    </application>
+
+</manifest>

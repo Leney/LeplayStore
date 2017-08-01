@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:leplay="http://schemas.android.com/apk/res-auto"
+            android:background="@color/white"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 顶部信息部分 -->
+
+        <RelativeLayout
+            android:id="@+id/treasure_user_info_lay"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:background="@drawable/personal_top_bg" >
+
+            <!-- 头像 -->
+
+            <com.xd.leplay.store.view.CustomImageView
+                android:id="@+id/treasure_user_icon"
+                android:layout_width="73.3dp"
+                android:layout_height="73.3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:src="@drawable/user_icon_default"
+                leplay:outCircleColor="#8988ed"
+                leplay:outCircleWidth="2dp"
+                leplay:type="circle" />
+
+            <!-- 箭头 -->
+
+            <ImageView
+                android:id="@+id/treasure_right_proint_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/right_proint_big" />
+
+            <View
+                android:id="@+id/treasure_user_info_emty_view"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/treasure_user_icon"
+                android:layout_toLeftOf="@id/treasure_right_proint_img"
+                android:layout_toRightOf="@id/treasure_user_icon"
+                android:layout_toStartOf="@id/treasure_right_proint_img" />
+
+            <!-- 用户名称 -->
+
+            <TextView
+                android:id="@+id/treasure_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/treasure_user_info_emty_view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/treasure_user_icon"
+                android:layout_toLeftOf="@id/treasure_right_proint_img"
+                android:layout_toRightOf="@id/treasure_user_icon"
+                android:layout_toStartOf="@id/treasure_right_proint_img"
+                android:gravity="bottom"
+                android:text="用户名称"
+                android:textColor="@color/white"
+                android:textSize="26.6sp" />
+
+            <!-- 今日收入 -->
+
+            <TextView
+                android:id="@+id/treasure_user_today_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/treasure_user_info_emty_view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@id/treasure_user_icon"
+                android:layout_toLeftOf="@id/treasure_right_proint_img"
+                android:layout_toRightOf="@id/treasure_user_icon"
+                android:layout_toStartOf="@id/treasure_right_proint_img"
+                android:gravity="top"
+                android:text="今日收入:0"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!-- 金币和我的礼包按钮部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/personal_top_bg" >
+
+            <!-- 金币 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_my_coins_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/manager_my_gifts_btn_selector"
+                android:gravity="center" >
+
+                <!-- 金币数量 -->
+
+                <TextView
+                    android:id="@+id/treasure_coin_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/coin"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/coin"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/manager_gifts_down" />
+            <!-- 消息 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_my_msgs_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/manager_my_gifts_btn_selector"
+                android:gravity="center" >
+
+                <!-- 消息数量 -->
+
+                <TextView
+                    android:id="@+id/treasure_msg_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/msg_icon_2"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/msg_icon_2"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/manager_gifts_down" />
+
+            <!-- 刷新金币 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_my_gifts_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/manager_my_gifts_btn_selector"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/treasure_mygift_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/refresh_coin_icon"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/refresh_coin_icon"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:text="@string/refresh_coins"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="73.6dp" >
+
+            <!-- 天天签到 -->
+
+            <Button
+                android:id="@+id/treasure_sign_in_btn"
+                android:layout_width="133.6dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/sign_in_btn_bg_selector"
+                android:text="@string/sign_in_for_everyday"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/sign_empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true" />
+            <!-- 天天签到 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/sign_empty_view"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:gravity="bottom"
+                android:text="@string/day_day_sign"
+                android:textColor="@color/list_soft_describe_color"
+                android:textSize="18sp" />
+
+            <!-- 连续签到天数 -->
+
+            <TextView
+                android:id="@+id/treasure_sign_in_day_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sign_empty_view"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:gravity="top"
+                android:text="@string/sign_days"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/treasure_sign_in_day_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sign_empty_view"
+                android:layout_toEndOf="@id/treasure_sign_in_day_left"
+                android:layout_toRightOf="@id/treasure_sign_in_day_left"
+                android:gravity="top"
+                android:text="3"
+                android:textColor="@color/redeem_code_text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sign_empty_view"
+                android:layout_toEndOf="@id/treasure_sign_in_day_count"
+                android:layout_toRightOf="@id/treasure_sign_in_day_count"
+                android:gravity="top"
+                android:text="@string/day"
+                android:textColor="@color/list_describle_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="3dp"
+            android:gravity="center_vertical" >
+
+            <!-- 星期一 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/monday"
+                    android:textColor="@color/title_name_color2"
+                    android:textSize="12sp" />
+
+                <!-- 获得金币的历史记录 -->
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_monday_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- 星期二 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/tuesday"
+                    android:textColor="@color/title_name_color2"
+                    android:textSize="12sp" />
+
+                <!-- 获得金币的历史记录 -->
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_tuesday_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- 星期三 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/wednesday"
+                    android:textColor="@color/title_name_color2"
+                    android:textSize="12sp" />
+
+                <!-- 获得金币的历史记录 -->
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_wednesday_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- 星期四 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/thursday"
+                    android:textColor="@color/title_name_color2"
+                    android:textSize="12sp" />
+
+                <!-- 获得金币的历史记录 -->
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_thursday_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- 星期五 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/friday"
+                    android:textColor="@color/title_name_color2"
+                    android:textSize="12sp" />
+
+                <!-- 获得金币的历史记录 -->
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_friday_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- 星期六 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_sarturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/sarturday"
+                    android:textColor="@color/title_name_color2"
+                    android:textSize="12sp" />
+
+                <!-- 获得金币的历史记录 -->
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_sarturday_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!-- 星期天 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/sunday"
+                    android:textColor="@color/title_name_color2"
+                    android:textSize="12sp" />
+
+                <!-- 获得金币的历史记录 -->
+
+                <TextView
+                    android:id="@+id/treasure_sign_in_sunday_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6.6dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/main_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <!-- 邀请好友 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_button_lay_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/treasure_btn_icon_1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/invite_friends"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_color" />
+
+            <!-- 每日抽奖 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_button_lay_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/treasure_btn_icon_2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/treasure_lottery"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_color" />
+            <!-- 我的钱包 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_button_lay_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/treasure_btn_icon_3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/treasure_my_purse"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <!-- 关注爱玩 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_button_lay_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/treasure_btn_icon_4"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/attention_aiwan"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_color" />
+
+            <!-- 收入排行 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_button_lay_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/treasure_btn_icon_5"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/treasure_income_rank"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/main_color" />
+            <!-- 赚取记录 -->
+
+            <LinearLayout
+                android:id="@+id/treasure_button_lay_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/treasure_btn_icon_6"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/gain_coins_record"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/main_color" />
+    </LinearLayout>
+
+</ScrollView>

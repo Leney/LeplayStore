@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爱玩商店</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="recommend">推荐</string>
+    <string name="application">应用</string>
+    <string name="game">游戏</string>
+    <string name="treasure">财富</string>
+    <string name="tab1">推荐</string>
+    <string name="tab2">赚钱</string>
+    <string name="tab3">软件</string>
+    <string name="tab4">财富</string>
+    <string name="main_title_hint">要你好玩,让你好赚</string>
+    <string name="sign_in">签到</string>
+    <string name="download_app">下载应用</string>
+    <string name="update_app">更新应用</string>
+    <string name="manager_app">管理应用</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_us">关于我们</string>
+    <string name="feedback">意见反馈</string>
+    <string name="manager_center">管理中心</string>
+    <string name="installed_version_size">大小:%s</string>
+    <string name="uninstall_all">一键卸载</string>
+    <string name="uninstall_all2">一键卸载(%1$s个,%2$s)</string>
+    <string name="new_first">新品首发</string>
+    <string name="get_coins">玩赚金币</string>
+    <string name="day_day_get">天天赚</string>
+    <string name="easy_get">轻松赚</string>
+    <string name="coin_actions">金币任务</string>
+    <string name="award_coins">奖励%s金币</string>
+    <string name="award_coins_task">奖励%s</string>
+    <string name="footter_loading">正在加载...</string>
+    <string name="footter_net_error">加载失败,点击重新加载</string>
+    <string name="net_error">网络连接失败,请设置网络</string>
+    <string name="loading_failed">加载失败,请重新刷新试试</string>
+    <string name="footter_end">~到底了~</string>
+    <string name="set_net">网络设置</string>
+    <string name="retry">重试</string>
+    <string name="install_all">全部安装</string>
+    <string name="cancle">取    消</string>
+    <string name="detials">详情</string>
+    <string name="downloading">下载中</string>
+    <string name="finished">已完成</string>
+    <string name="gift">礼包</string>
+    <string name="first">首发</string>
+    <string name="hot">热门</string>
+    <string name="boutique">精品</string>
+    <string name="official">官方</string>
+    <string name="safety">安全</string>
+    <string name="no_ad">无广告</string>
+    <string name="rank">排行</string>
+    <string name="necessary">必备</string>
+    <string name="sort">分类</string>
+    <string name="details">详情</string>
+    <string name="commnet">评论</string>
+    <string name="get_gift">领取游戏礼包</string>
+    <string name="app_describle">应用描述</string>
+    <string name="update_describle">更新说明</string>
+    <string name="app_details">应用详情</string>
+    <string name="task_details">任务详情</string>
+    <string name="pack_up">收起</string>
+    <string name="expand">展开</string>
+    <string name="count_download">次下载</string>
+    <string name="share">分享</string>
+    <string name="do_comment">我要评论</string>
+    <string name="monday">周一</string>
+    <string name="tuesday">周二</string>
+    <string name="wednesday">周三</string>
+    <string name="thursday">周四</string>
+    <string name="friday">周五</string>
+    <string name="sarturday">周六</string>
+    <string name="sunday">周日</string>
+    <string name="sign_in_for_everyday">立即签到</string>
+    <string name="treasure_get_coins">赚取金币</string>
+    <string name="treasure_begin_get_coins">开始赚钱</string>
+    <string name="treasure_lottery">每日抽奖</string>
+    <string name="treasure_income_rank">收入排行</string>
+    <string name="treasure_my_purse">我的钱包</string>
+    <string name="warm_prompt">温馨提示</string>
+    <string name="change_keys">换一批</string>
+    <string name="setting">设置</string>
+    <string name="cur_net_status">当前网络</string>
+    <string name="no_pic_model">无图省流量模式</string>
+    <string name="no_pic_model_des">在非WLAN网络下，软件列表中不显示软件图标</string>
+    <string name="delete_apk">删除安装包</string>
+    <string name="delete_apk_des">在安装成功后删除安装包</string>
+    <string name="apk_location">安装包下载位置</string>
+    <string name="clear_cancle">清除本地缓存</string>
+    <string name="clear_cancle_des">清除本地日志，图片，已下载apk包等文件</string>
+    <string name="auto_update_when_wifi">自动更新</string>
+    <string name="auto_update_when_wifi_des">在WLAN网络下，自动下载应用更新包</string>
+    <string name="receiver_push_msg">接收推荐内容提醒</string>
+    <string name="receiver_push_msg_des">接收爱玩最新资讯</string>
+    <string name="wifi">WLAN</string>
+    <string name="not_wifi">非WLAN</string>
+    <string name="wrong_pwd">密码不正确，请重新输入</string>
+    <string name="login">登 录</string>
+    <string name="login_phone_hint">手机号码</string>
+    <string name="login_pwd_hint">密码</string>
+    <string name="register_accounts">注册帐号</string>
+    <string name="lost_pwd">忘记密码</string>
+    <string name="register_phone_hint">手机号</string>
+    <string name="register_pwd_hint">4-16位的登录密码</string>
+    <string name="register_invite_hint">邀请码:选填</string>
+    <string name="register_verification_code_hint">验证码</string>
+    <string name="register_get_verification_code">获取短信验证码</string>
+    <string name="reget_code">重新获取(%sS)</string>
+    <string name="get_code_failed">获取验证码失败</string>
+    <string name="register_failed">注册失败</string>
+    <string name="next">下一步</string>
+    <string name="register_login">登录已有帐号</string>
+    <string name="register">登录注册</string>
+    <string name="input_phone_num">请输入手机号</string>
+    <string name="input_account">请输入申请提现的账户</string>
+    <string name="input_phone_num_error">您输入的手机号码有误</string>
+    <string name="input_pwd">请输入您的密码</string>
+    <string name="input_pwd_error">请正确输入4-16位的登录密码</string>
+    <string name="input_code">验证码不能为空</string>
+    <string name="input_code_error">您输入的验证码有误</string>
+    <string name="input_phone">手机号码</string>
+    <string name="change_phone_num">绑定手机</string>
+    <string name="nick_name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="exit_account">退出帐号</string>
+    <string name="personal_center">个人中心</string>
+    <string name="already_get_cash">已提现: </string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="unknow">未知</string>
+    <string name="without">无</string>
+    <string name="sure_exit">您确定退出当前帐号 %s ？</string>
+    <string name="input_old_pwd">原密码</string>
+    <string name="input_new_pwd_hint">新密码</string>
+    <string name="input_new_pwd_again">确认新密码</string>
+    <string name="submit">提    交</string>
+    <string name="input_old_pwd_error">请正确输入4-16位的旧密码</string>
+    <string name="input_new_pwd">请输入您的新密码</string>
+    <string name="input_new_pwd_error">请正确输入4-16位的新密码</string>
+    <string name="input_new_pwd_affim_error">您两次输入的新密码不一致</string>
+    <string name="old_new_pwd_same">新密码与旧密码不能相同</string>
+    <string name="modify_pwd_success">修改密码成功</string>
+    <string name="modifing">正在修改，请稍后...</string>
+    <string name="registting">正在登录，请稍后...</string>
+    <string name="submit_apply_cash">正在申请提现...</string>
+    <string name="apply_cash_successful">申请提现成功</string>
+    <string name="apply_cash_successful_des">审核成功之后，1个工作日内到账，请注意查收</string>
+    <string name="logining">正在登录，请稍后...</string>
+    <string name="modify_pwd_failed">修改密码失败，请重试</string>
+    <string name="login_failed">登录失败</string>
+    <string name="modify_sex">性别修改</string>
+    <string name="modify_nick_name">昵称修改</string>
+    <string name="modify_user_info_success">修改用户信息成功</string>
+    <string name="modify_nick_name_hint">请输入要修改成的昵称</string>
+    <string name="input_nick_name">修改的昵称不能为空</string>
+    <string name="change_nick_name_same">相同昵称，不需要修改</string>
+    <string name="modify_phone">更改手机</string>
+    <string name="submitting">正在提交请求，请稍后...</string>
+    <string name="submit_data_failed">提交更改手机请求失败，请稍后重试</string>
+    <string name="submit_find_pwd_failed">提交找回密码请求失败，请稍后重试</string>
+    <string name="input_new_phone">请输入新的手机号码</string>
+    <string name="input_new_phone_error">您输入的新手机号码有误</string>
+    <string name="input_new_phone_again">请再次输入新的手机号码</string>
+    <string name="input_new_phone_again_error">您再次输入的手机号码有误</string>
+    <string name="input_twice_phone_not_same">您两次输入的手机号码不一致</string>
+    <string name="sure">确    定</string>
+    <string name="modify_new_phone_failed">更改手机号失败</string>
+    <string name="camera">拍  照</string>
+    <string name="photos">相  册</string>
+    <string name="change_user_icon">更换头像</string>
+    <string name="get_local_photos_failed">无法获取到本地相册</string>
+    <string name="get_camera_failed">无法获取到相机</string>
+    <string name="loast_pwd_input_new_pwd">新密码</string>
+    <string name="loast_pwd_input_new_pwd_again">确认新密码</string>
+    <string name="change_new_pwd_failed">找回密码失败</string>
+    <string name="code_invaile">验证码已过期,请重新获取</string>
+    <string name="no_download_task">您当前还没有创建下载任务哦~</string>
+    <string name="update">更新</string>
+    <string name="ignore">忽略</string>
+    <string name="ignore_update">忽略应用</string>
+    <string name="cancle_ignore">取消忽略</string>
+    <string name="update_all">全部更新</string>
+    <string name="uningnore_all">全部取消忽略</string>
+    <string name="update_percent">的人已更新</string>
+    <string name="update_describe">更新说明：</string>
+    <string name="publish_date">发布时间：</string>
+    <string name="no_update_apps">没有可升级的应用,去忽略列表看看</string>
+    <string name="no_ignore_apps">当前无忽略升级的应用</string>
+    <string name="copy">复制</string>
+    <string name="copy_redeem_code">复制激活码</string>
+    <string name="grab_gift">抢礼包</string>
+    <string name="quickly_update">一键更新</string>
+    <string name="username">用户名</string>
+    <string name="please_login">请登录</string>
+    <string name="gift_detail">礼包详情</string>
+    <string name="gift_content">礼包内容 </string>
+    <string name="get_gift_eligibility">领取资格 </string>
+    <string name="get_gift_way">领取方式 </string>
+    <string name="redeem_code">激活码：</string>
+    <string name="valied_data">有效期：</string>
+    <string name="copy_code">复制兑换码</string>
+    <string name="again_sure_exit">再按一次退出程序</string>
+    <string name="get_gift_success">领取礼包成功</string>
+    <string name="use_way">使用方法：</string>
+    <string name="copy_code_success">已复制兑换码到粘贴板！</string>
+    <string name="getting_gift">正在获取礼包...</string>
+    <string name="get_gift_failed">获取礼包失败</string>
+    <string name="no_gift">改礼包已被抢完</string>
+    <string name="already_get_gift">您已领取过该礼包</string>
+    <string name="copy_failed">无法复制</string>
+    <string name="to">至</string>
+    <string name="my_gift">我的礼包</string>
+    <string name="no_gifts">您当前还没领取礼包哦~</string>
+    <string name="no_comments">~ 抢占沙发 ~</string>
+    <string name="comment_input_hint">您的建议，将是我们无限的动力!</string>
+    <string name="comment_rating_1">那是相当的烂</string>
+    <string name="comment_rating_2">槽点太尼玛多了</string>
+    <string name="comment_rating_3">我只能说一般</string>
+    <string name="comment_rating_4">整体感觉还不错</string>
+    <string name="comment_rating_5">非常赞，么么哒</string>
+    <string name="comment_content_problem">您提交的内容有非法字符，请检查后再评论，评论失败</string>
+    <string name="comment_failed">评论失败</string>
+    <string name="praise">%s人喜欢</string>
+    <string name="share_app_title">史上最强赚钱软件—爱玩商店</string>
+    <string name="share_app_content">【 史上最强赚钱软件—爱玩商店 】\n honey,经本超人在  爱玩商店  不断摸索，发现了一款非常不错的东东：%s。嘘！一般人我可不告诉他!\n</string>
+    <string name="share_app_weixin_title">【 史上最强赚钱软件—爱玩商店 】</string>
+    <string name="share_app_weixin_content">honey,经本超人在  爱玩商店  不断摸索，发现了一款非常不错的东东：%s,嘘！一般人我可不告诉他!</string>
+    <string name="share_weixin_content">一款既好玩又能赚钱的软件下载平台，每月能赚几百元零花钱，赶快一起来赚吧！</string>
+    <string name="share_aiwan_invite_code">史上最强赚钱软件—爱玩商店 \n一款既好玩又能赚钱的软件下载平台，每月能赚几百元零花钱，赶快一起来赚吧！\n%s</string>
+    <string name="gain_coins">赚取金币</string>
+    <string name="gain_coins_record">赚取记录</string>
+    <string name="gain_coins_today_coins">今日收入</string>
+    <string name="register_and_login">注册登录</string>
+    <string name="register_and_login_des">首次登录注册爱玩商店奖励 %s金币</string>
+    <string name="gain_coins_friend_back">好友提现奖励</string>
+    <string name="gain_coins_friend_back_des">邀请的好友提现后，额外奖励提现金额的%s</string>
+    <string name="invite_friends">邀请好友</string>
+    <string name="invite_friends_des">邀请好友成功注册爱玩商店奖励%s金币</string>
+    <string name="attention_aiwan">关注爱玩</string>
+    <string name="attention_aiwan_des">关注爱玩商店微信公众号，领取现金红包</string>
+    <string name="download_apps">下载应用</string>
+    <string name="download_have_coins">下载奖励</string>
+    <string name="download_apps_des">下载有奖励金币的应用，可获得相应的金币数</string>
+    <string name="feed_back_input_hint">honey,评论一下不会怀孕的，整两句呗！</string>
+    <string name="feed_back_empty">写下您的意见之后才可以提交哦</string>
+    <string name="feed_submitting">正在提交...</string>
+    <string name="feed_submit_success">您的意见和建议我们已经收到,谢谢</string>
+    <string name="feed_submit_failed">未能成功提交您的建议，请稍后重试！</string>
+    <string name="use_deal">使用协议</string>
+    <string name="aiwan_reserved">深圳型动科技有限公司 版权所有</string>
+    <string name="aiwan_reserved_en">Copyrighte © 2015 aiwan.All Rights Reserve.</string>
+    <string name="aiwan_new_update">您有新版本%s等待更新</string>
+    <string name="aiwan_already_new_update">当前已是最新版本</string>
+    <string name="copy_qq_group_num_success">已复制粉丝群号到粘贴板</string>
+    <string name="copy_email_account_success">已复制邮箱帐号到粘贴板</string>
+    <string name="copy_public_account_account_success">已复制爱玩微信公众帐号到粘贴板</string>
+    <string name="sign_days">已经连续签到 </string>
+    <string name="day">天</string>
+    <string name="signing">正在签到...</string>
+    <string name="refreshing">刷新中...</string>
+    <string name="sign_success">签到成功</string>
+    <string name="sign_failed">签到失败</string>
+    <string name="already_sign">已签到</string>
+    <string name="my_coins">当前金币：</string>
+    <string name="apply_cash">申请提现</string>
+    <string name="apply_cash_rule">1个工作日内到账(节假日顺延)</string>
+    <string name="already_gain">已赚</string>
+    <string name="coin">金币</string>
+    <string name="invited_success">您已成功邀请  %s 位好友，继续加油</string>
+    <string name="share_invite_code">分享您的邀请码:</string>
+    <string name="invited_one">当好友使用您的邀请码成功注册之后</string>
+    <string name="invited_one2">您可获得 </string>
+    <string name="invited_one3"> 金币的奖励</string>
+    <string name="no_gain_coins_record">您当前还没有赚取金币的记录哦</string>
+    <string name="input_alipay_account_hint">请输入支付宝帐号</string>
+    <string name="input_weixin_account_hint">请输入微信帐号</string>
+    <string name="apply_cash_weixin_warm_prompt">温馨提示：应微信官方要求，好友间才能进行转账交易，请关注[爱玩商店]后再提现,公众号(%s)</string>
+    <string name="apply_cash_weixin_warm_prompt2">温馨提示：应微信官方要求，好友间才能进行转账交易，请关注[爱玩商店]后再提现,公众号(aiwanshangdian)</string>
+    <string name="max_apply_cash">您当前最多可提现%s元</string>
+    <string name="input_apply_cash_money">请输入申请提现的金额</string>
+    <string name="can_not_apply_cash">您还未达到5元的最低提现金额</string>
+    <string name="can_not_apply_cash1">您还未达到最低5元的提现要求</string>
+    <string name="can_not_apply_cash2">每次提现不能低于5元</string>
+    <string name="coins_details">赚钱秘籍</string>
+    <string name="rank_name">排名</string>
+    <string name="user">用户</string>
+    <string name="income">收入(元)</string>
+    <string name="my_rank_num">我的排名：%s</string>
+    <string name="no_rank">未进入排名</string>
+    <string name="my_rank_level_name">我的称号：%s</string>
+    <string name="modify_phone_success">更改成功，请重新登录</string>
+    <string name="upgrade_aiwan">版本升级</string>
+    <string name="upgrade_aiwan_msg">爱玩商店已升级到%s,马上尝鲜</string>
+    <string name="upgrade_aiwan_now">马上更新</string>
+    <string name="download_get_coins">下载领金币</string>
+    <string name="download_get_coins_msg">登陆后,才能获得奖励金币\n个人中心可以查看金币数,还能直接提现</string>
+    <string name="redownload_msg">您要安装应用的本地安装包已不存在,是否重新下载？</string>
+    <string name="redownload">重新下载</string>
+    <string name="re_login">您的登录信息已过期,请重新登录</string>
+    <string name="keep_this">继续坚持下去,更多奖励等着您</string>
+    <string name="other_get_coins">恭喜您额外获得 %s 金币</string>
+    <string name="first_login_get">注册即送 %s 金币\n金币可以直接提现哦！</string>
+    <string name="first_login_get2">新用户登录</string>
+    <string name="first_login_get3">奖励 %s元 红包</string>
+    <string name="not_enough_memory">您的存储空间已不足,请清理后再下载</string>
+    <string name="too_big_pic">您选择的图片太大,请重新选择</string>
+    <string name="uploading">正在上传头像...</string>
+    <string name="upload_failed">上传头像失败</string>
+    <string name="upload_success">上传头像成功</string>
+    <string name="no_gifts_for_now">暂无礼包活动</string>
+    <string name="lottery_failed">抽奖失败</string>
+    <string name="lottery_got_it">恭喜您抽中 %s 金币</string>
+    <string name="get_pic_failed">拉取图片失败</string>
+    <string name="crop_pic_failed">裁剪图片失败,请重试</string>
+    <string name="coins"> 金币</string>
+    <string name="format_coins">%s金币</string>
+    <string name="cash_have">提现奖励</string>
+    <string name="clearing">正在清除...</string>
+    <string name="clear_cancle_success">清除缓存成功</string>
+    <string name="search_history">搜索历史</string>
+    <string name="clear">清空</string>
+    <string name="weixin_friends">微信</string>
+    <string name="weixin_friends_circle">朋友圈</string>
+    <string name="qq_friends">QQ</string>
+    <string name="qzone">QQ空间</string>
+    <string name="share_more">分享更多</string>
+    <string name="no_installed_app">您当前还未安装该应用</string>
+    <string name="refresh_coins">刷新</string>
+    <string name="youmi_get_coins">有米赚</string>
+    <string name="day_day_sign">天天签到</string>
+    <string name="today_coins">今日收入：%s</string>
+    <string name="yuan">%s元</string>
+    <string name="binding_weixin">快速提现,请绑定微信帐号</string>
+    <string name="binding_now">立即绑定</string>
+    <string name="go_weixin">进入微信</string>
+    <string name="donwload_income">任务下载收入：</string>
+    <string name="sign_and_lottery_income">签到抽奖收入：</string>
+    <string name="invite_income">邀请奖励收入：</string>
+    <string name="other_income">其他奖励收入：</string>
+    <string name="get_cash_history">提现记录</string>
+    <string name="invite_friends_title_name">邀请好友三重好礼</string>
+    <string name="ren">%s人</string>
+    <string name="invite_friends_new_rule1">1、好友成功注册后奖励 %s元</string>
+    <string name="invite_friends_new_rule2">2、成功邀请100位好友额外奖励 %s元</string>
+    <string name="invite_friends_new_rule3">3、好友提现后，额外奖励提现金额的 %s</string>
+    <string name="loading">请稍候...</string>
+    <string name="or">或</string>
+    <string name="invite_code">邀请码：</string>
+    <string name="qd_invite">二维码邀请</string>
+    <string name="have_red_packet">恭喜您获得 10 个红包</string>
+    <string name="share_red_packet_text">将红包分享给好友,并成功注册爱玩商店帐号,您即可获得 10元 奖励</string>
+    <string name="share_now">立即分享</string>
+    <string name="share_red_packet_content">我刚在爱玩商店提现了%s元,并为您准备了一个红包,点击免费领取</string>
+    <string name="share_red_packet">红包分享</string>
+    <string name="first_got_money_knows">首次提现须知</string>
+    <string name="no_installed_weixin">您当前未安装微信</string>
+    <string name="re_try">重    试</string>
+    <string name="install">立即安装</string>
+    <string name="upgread_install_text">已升级到新版本，点击安装</string>
+    <string name="upgread_error_text">更新出错，点击重试</string>
+    <string name="upgreading_text">正在升级新版本，请稍后...</string>
+    <string name="check_update_failed">检查更新失败</string>
+    <string name="task_total_list">任务列表</string>
+    <string name="task_mine_list">我的任务</string>
+    <string name="no_task">没有任务</string>
+    <string name="coins_task">金币任务</string>
+    <string name="task_detal_ps">注：下载安装后，必须从爱玩商店里打开</string>
+    <string name="task_reward">奖励</string>
+
+    <!-- 玩家级别 -->
+    <string name="level_name_1">新晋玩家</string>
+    <string name="level_name_2">冒险玩家</string>
+    <string name="level_name_3">竞技玩家</string>
+    <string name="level_name_4">热血玩家</string>
+    <string name="level_name_5">钻石玩家</string>
+    <string name="level_name_6">超级玩家</string>
+    <!-- 换行的玩家级别 -->
+    <string name="player1">新晋\n玩家</string>
+    <string name="player2">冒险\n玩家</string>
+    <string name="player3">竞技\n玩家</string>
+    <string name="player4">热血\n玩家</string>
+    <string name="player5">钻石\n玩家</string>
+    <string name="player6">超级\n玩家</string>
+
+    <!-- 发布日期 -->
+    <string name="app_publish_date">发布日期：2016-01-08</string>
+    <!-- 客服电话 -->
+    <string name="service_tel_num_des">客服电话</string>
+    <!-- 用户粉丝群 -->
+    <string name="fans_qq_group_num_des">用户粉丝群</string>
+    <string name="feed_back_top_des">您有什么好的建议或不满意的地方都可以通过这里告诉我们，也欢迎您进入我们的用户QQ群讨论(群号：175732183)</string>
+    <!-- 爱玩商店微信公众帐号 -->
+    <string name="weixin_public_account_des">爱玩商店微信公众帐号</string>
+    <!-- 爱玩商店公司邮箱 -->
+    <string name="aiwan_email_des">爱玩商店公司邮箱</string>
+    <!-- 金币兑换规则 -->
+    <string name="exchange_rule">%s金币=1元</string>
+    <!-- 成功邀请多少人之后送大礼规则 -->
+    <string name="invited_rule1">成功邀请%s位好友后</string>
+    <string name="invited_rule2">成为爱玩商店代言人，额外奖励%s金币</string>
+    <string name="sign_success_content_msg">恭喜获得 %s 金币</string>
+    <string name="sign_success_cur_coins">您当前累计 %s 金币</string>
+    <string name="sign_success_cur_money">( =%s元 )</string>
+    <string name="sign_success_surplus_sign_days">再连续签到 %s 天,</string>
+    <string name="sign_success_extra_coins">额外奖励 %s 金币</string>
+    <string name="login_get">登录领取</string>
+    <string name="download_gain">下载赚</string>
+    <string name="download_gain_des">下载软件赚金币，每日前5次下载进入奖励</string>
+    <string name="invite_qd_top_text">赚钱软件爱玩商店</string>
+    
+    <!-- 我的下载 -->
+    <string name="download_reward_title">我的下载</string>
+    <string name="download_reward_record">下载记录</string>
+    <string name="download_reward_rank">下载排行榜</string>
+    <string name="download_reward_app_num">再下载%1$s个应用  , 奖励%2$s金币</string>
+    <string name="download_app_gain_extra_reward">每日累计%s次下载计入奖励</string>
+    <string name="show_off">炫耀一下:</string>
+    <string name="already_gain_reward_coin">%s金币</string>
+    <string name="download_reward_rank_gain_coins">+%s金币</string>
+    <string name="download_reward_rank_user_name">请叫我尊上</string>
+    <string name="download_reward_rank_app_sum">下载应用%s</string>
+    <string name="no_gain_download_record">您当前还没有下载应用的记录哦！</string>
+    <string name="no_gain_download_rank_record">您当前还没有下载排行的记录哦！</string>
+    <string name="download_reward_record_already_gain">已下载%1$s个应用,共赚取 %2$s金币</string>
+    <string name="download_reward_share_title">炫耀一下</string>
+    <string name="download_reward_share_content">看的就是气质，我在爱玩商店已成功下载%1$s个应用，赚取%2$s个金币%3$s\n%4$s</string>
+    <string name="download_task__des">完成每日下载任务，获取丰厚奖励</string>
+    <string name="show_off_share_content">赚钱神器 — 日赚百元，5元即可提现\n%s</string>
+    <string name="wx_login_text">微信登录</string>
+    <string name="invited_code">邀请码</string>
+    <string name="isinput_invited_code_">选填</string>
+    <string name="ignore_submit_btn">忽略</string>
+    <string name="confirm_name_submit_btn">下一步</string>
+    <string name="invite_code_description">您的邀请人可以获得丰厚奖励</string>
+    <string name="bound_weixin">绑定微信</string>
+    <string name="bound_phone">关联手机</string>
+    <string name="got_money_proint">提现金额将在24小时内转入您的微信帐号(节假日顺延)</string>
+    <string name="phone_text">手机</string>
+    <string name="weixin_text">微信</string>
+    <string name="click_bind">点击关联</string>
+    <string name="is_bound">已关联</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="toBind_phone">请输入手机号</string>
+    <string name="toChange_phone">请输入新手机号</string>
+    <string name="get_weixin_token_failed">获取微信access_token失败</string>
+    <string name="get_weixin_user_info_failed">获取微信个人信息失败</string>
+    <string name="bind_failed">绑定失败</string>
+    <string name="msg_notify">消息通知</string>
+    <string name="no_money">未到账</string>
+    <string name="got_money">已到账</string>
+    <string name="money_checking">审核中</string>
+    <string name="got_reward">提现记录</string>
+    <string name="no_msgs">暂无消息</string>
+    <string name="no_reward">暂无记录</string>
+    <string name="internet_error">网络错误！</string>
+    <string name="download_task_income">任务下载收入</string>
+    <string name="sign_lottery_income">签到抽奖收入</string>
+    <string name="invite_friend_income">邀请好友收入</string>
+    <string name="other_reward_income">其它奖励收入</string>
+    <string name="red_packet_password_income">红包口令收入</string>
+    <string name="no_gain_coins_detail">无记录</string>
+    <string name="wx_authorize_failed">微信授权失败</string>
+    <string name="no_support_emotion_input">不支持表情输入</string>
+    <string name="red_packet_password_input_title">爱玩商店红包</string>
+    <string name="red_packet_record">红包记录</string>
+    <string name="editext_hint_input_red_packet_password">请输入红包口令</string>
+    <string name="gain_red_packet">领红包</string>
+    <string name="red_packet_password_rule_1">1、口令会提前在微信公众号，QQ微信粉丝群通知</string>
+    <string name="red_packet_password_rule_2">2、输入口令后，领取随机红包</string>
+    <string name="red_packet_password_rule_3">3、红包自动存入微信钱包（低于1元存入我的钱包）</string>
+    <string name="red_packet_password_rule_4">4、每轮红包活动，用户只可领取一次</string>
+    <string name="red_packet_password_rule_5">5、最终解释权归爱玩商店所有</string>
+    <string name="red_packet_dialog_main_title">爱玩商店</string>
+    <string name="red_packet_dialog_second_title">给您发红包啦</string>
+    <string name="red_packet_detail_coins">16.88 </string>
+    <string name="red_packet_detail_coins_unit">元</string>
+    <string name="red_packet_detail_look_my_wallet">查看我的钱包</string>
+    <string name="red_packet_password_empty">请输入您的红包口令</string>
+    <string name="red_packet_password_error">红包领取失败</string>
+    <string name="red_packet_password_loading">正在领取，请稍候...</string>
+    <string name="red_packet_password_share_title">爱玩商店给您发红包啦</string>
+    <string name="red_packet_password_share_wx_content">亲，快来爱玩商店抢现金红包，成功注册后下载爱玩商店输入红包口令“%s”即可领取</string>
+    <string name="red_packet_password_share_content">亲，快来爱玩商店抢现金红包，成功注册后下载爱玩商店输入红包口令“%1$s”即可领取 \n%2$s</string>
+    <string name="get_red_packet_notice">请先提交绑定，领取红包后自动存入微信钱包</string>
+    <string name="uninstall_app">卸载</string>
+    <!-- 下载按钮各种状态所对应的状态文本 -->
+    <string-array name="app_state_texts">
+        <item>等 待</item>
+        <item>暂 停</item>
+        <item>继 续</item>
+        <item>安 装</item>
+        <item>重 试</item>
+        <item>下 载</item>
+        <item>打 开</item>
+        <item>更 新</item>
+    </string-array>
+
+    <!-- 下载按钮各种状态所对应的颜色值 -->
+    <string-array name="app_state_colors">
+        <item>#0077a8</item>
+        <item>#0077a8</item>
+        <item>#925300</item>
+        <item>#f5a133</item>
+        <item>#925300</item>
+        <item>#498fd0</item>
+        <item>#4ea95c</item>
+        <item>#65d3ff</item>
+    </string-array>
+
+    <!-- 详情底部下载按钮各种状态所对应的颜色值 -->
+    <string-array name="detial_app_state_colors">
+        <item>#0077a8</item>
+        <item>#0077a8</item>
+        <item>#925300</item>
+        <item>#f5a133</item>
+        <item>#925300</item>
+        <item>#ffffff</item>
+        <item>#4ea95c</item>
+        <item>#ffffff</item>
+    </string-array>
+
+    <!-- 任务按钮状态所对应的文本 -->
+    <string-array name="task_state_texts">
+        <item>做任务</item>
+        <item>打 开</item>
+        <item>打 开</item>
+        <item>领取奖励</item>
+        <item>已完成</item>
+        <item>未开始</item>
+    </string-array>
+
+    <!-- 任务按钮状态所对应文本的色值 -->
+    <string-array name="task_state_text_colors">
+        <item>#ffffff</item>
+        <item>#ffffff</item>
+        <item>#ffffff</item>
+        <item>#ffffff</item>
+        <item>#ffffff</item>
+        <item>#999999</item>
+    </string-array>
+    <!-- 点入积分墙appKey -->
+    <string name="dr_app_key">00009944240000D1</string>
+
+    <string name="ad">广告</string>
+    <string name="begin_download">开始下载</string>
+    <string name="begin_download_exist">下载已存在,正在下载</string>
+    <string name="ad_go_now">立即前往</string>
+    <string name="invaild_url">无效链接</string>
+
+</resources>

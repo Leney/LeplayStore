@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 三角形的颜色 -->
+    <color name="triangle">#aaff0000</color>
+    <!-- 圆形的颜色 -->
+    <color name="circle">#aa738ffe</color>
+    <!-- 正方形的颜色 -->
+    <color name="rect">#aae84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+
+</resources>

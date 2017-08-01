@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="13.3dp" >
+
+    <!-- icon -->
+
+    <ImageView
+        android:id="@+id/classify_adapter2_icon"
+        android:layout_width="46.6dp"
+        android:layout_height="46.6dp"
+        android:src="@drawable/default_icon" />
+
+    <!-- 名称 -->
+
+    <TextView
+        android:id="@+id/classify_adapter2_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginStart="13.3dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="通讯社交"
+        android:textColor="@color/title_name_color2"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_proint" />
+
+</LinearLayout>

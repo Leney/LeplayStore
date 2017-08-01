@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="229.3dp"
+            android:background="@drawable/invite_friend_top_bg" >
+
+            <ImageView
+                android:id="@+id/invite_friends_top_text_img"
+                android:layout_width="wrap_content"
+                android:layout_height="53.3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/invite_friend_text_img" />
+
+            <!-- 邀请码 -->
+
+            <TextView
+                android:id="@+id/invite_friends_code"
+                android:layout_width="wrap_content"
+                android:layout_height="46.6dp"
+                android:layout_below="@id/invite_friends_top_text_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/invite_friends_code_text_bg_shape"
+                android:gravity="center"
+                android:minWidth="286.6dp"
+                android:paddingLeft="6.6dp"
+                android:paddingRight="6.6dp"
+                android:singleLine="true"
+                android:text="aiwan585858"
+                android:textColor="#244968"
+                android:textSize="23.3sp" />
+
+            <!-- 邀请好友按钮 -->
+
+            <Button
+                android:id="@+id/invite_friends_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="13.3dp"
+                android:layout_marginLeft="13.3dp"
+                android:layout_marginRight="13.3dp"
+                android:layout_marginStart="13.3dp"
+                android:layout_marginTop="33.3dp"
+                android:background="@drawable/invite_friends_btn_bg_selector" />
+        </RelativeLayout>
+
+        <!-- 二维码邀请按钮 -->
+
+        <Button
+            android:id="@+id/invite_friends_qd_invite_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/qd_invite_btn_bg_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/invite_friends_title_bg"
+            android:gravity="center_vertical"
+            android:paddingEnd="49dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="49dp"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:text="@string/invite_friends_title_name"
+            android:textColor="@color/white"
+            android:textSize="21.3dp" />
+
+        <!-- 注册奖励 -->
+
+        <TextView
+            android:id="@+id/invite_friend_have_coins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:text="1、好友成功注册后奖励   0.5元"
+            android:textColor="@color/list_name_color"
+            android:textSize="16sp" />
+
+        <!-- 邀请100位奖励 -->
+
+        <TextView
+            android:id="@+id/invite_friend_rule2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:text="2、成功邀请100位好友额外奖励  100元"
+            android:textColor="@color/list_name_color"
+            android:textSize="16sp" />
+
+        <!-- 好友提现奖励 -->
+
+        <TextView
+            android:id="@+id/invite_friend_rule3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:text="3、好友提现后，额外奖励提现金额的 10%"
+            android:textColor="@color/list_name_color"
+            android:textSize="16sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/incon_list_bg_shape" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/invite_half_top_bg_shape" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="53.3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="邀请人数"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="53.3dp"
+                    android:background="@drawable/divider_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="53.3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="邀请奖励"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="53.3dp"
+                    android:background="@drawable/divider_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="53.3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="提现奖励"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- 邀请人数 -->
+
+                <TextView
+                    android:id="@+id/invite_friends_successed_friends_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53.3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="18人"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="53.3dp"
+                    android:background="@drawable/divider_color" />
+                <!-- 邀请好友获得的奖励 -->
+
+                <TextView
+                    android:id="@+id/invite_friends_already_gain_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53.3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="9元"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="53.3dp"
+                    android:background="@drawable/divider_color" />
+
+                <!-- 提现奖励 -->
+
+                <TextView
+                    android:id="@+id/invite_friends_back_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53.3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="80元"
+                    android:textColor="@color/list_soft_describe_color"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

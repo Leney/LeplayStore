@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 顶部金币信息部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/indicator_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <!-- 今日收入 -->
+
+            <TextView
+                android:id="@+id/gain_coins_today_coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/format_coins"
+                android:textColor="@color/white"
+                android:textSize="33.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gain_coins_today_coins"
+                android:textColor="@color/gain_coins_top_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86.6dp"
+            android:background="@color/white" >
+
+            <!-- 提现奖励 -->
+
+            <FrameLayout
+                android:id="@+id/gain_coins_friend_get_back_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/cash_have_icon"
+                    android:singleLine="true"
+                    android:text="@string/cash_have"
+                    android:textColor="@color/list_soft_describe_color" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider_color" />
+
+            <!-- 赚取记录 -->
+
+            <FrameLayout
+                android:id="@+id/gain_coins_get_record_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/gain_record_icon"
+                    android:singleLine="true"
+                    android:text="@string/gain_coins_record"
+                    android:textColor="@color/list_soft_describe_color" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider_color" />
+            <!-- 赚钱秘籍 -->
+
+            <FrameLayout
+                android:id="@+id/gain_coins_get_sercireate_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/item_bg_selector" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/gain_sercrite_icon"
+                    android:singleLine="true"
+                    android:text="@string/coins_details"
+                    android:textColor="@color/list_soft_describe_color" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6.6dp"
+            android:background="@color/main_color" />
+
+        <!-- 每日任务 -->
+
+        <LinearLayout
+            android:id="@+id/gain_coins_download_reward"
+            android:layout_width="match_parent"
+            android:layout_height="83.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                style="@style/gain_coins_icon_style"
+                android:src="@drawable/daily_task_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/download_reward_title"
+                    android:textColor="@color/list_name_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/download_task__des"
+                    android:textColor="@color/list_describle_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/gain_coins_top_spilt_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="79.9dp"
+            android:layout_marginStart="79.9dp"
+            android:background="@color/divider_color" />
+        <!-- 下载奖励 -->
+
+        <LinearLayout
+            android:id="@+id/gain_coins_download_app"
+            android:layout_width="match_parent"
+            android:layout_height="83.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                style="@style/gain_coins_icon_style"
+                android:src="@drawable/download_app_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/download_have_coins"
+                    android:textColor="@color/list_name_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/download_apps_des"
+                    android:textColor="@color/list_describle_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="79.9dp"
+            android:layout_marginStart="79.9dp"
+            android:background="@color/divider_color" />
+
+        <!-- 邀请好友 -->
+
+        <LinearLayout
+            android:id="@+id/gain_coins_invite_friends"
+            android:layout_width="match_parent"
+            android:layout_height="83.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                style="@style/gain_coins_icon_style"
+                android:src="@drawable/invalid_friends_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/invite_friends"
+                    android:textColor="@color/list_name_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/gain_coins_invite_friends_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/invite_friends_des"
+                    android:textColor="@color/list_describle_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="79.9dp"
+            android:layout_marginStart="79.9dp"
+            android:background="@color/divider_color" />
+        <!-- 关注爱玩 -->
+
+        <LinearLayout
+            android:id="@+id/gain_coins_attention_aiwan"
+            android:layout_width="match_parent"
+            android:layout_height="83.3dp"
+            android:background="@drawable/item_bg_selector"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                style="@style/gain_coins_icon_style"
+                android:src="@drawable/attention_aiwan_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/attention_aiwan"
+                    android:textColor="@color/list_name_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/attention_aiwan_des"
+                    android:textColor="@color/list_describle_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="79.9dp"
+            android:layout_marginStart="79.9dp"
+            android:background="@color/divider_color" />
+    </LinearLayout>
+
+</ScrollView>

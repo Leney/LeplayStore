@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splash_screen_img" />
+
+    <!-- 跳过按妞 -->
+    <!-- <TextView
+        android:id="@+id/splash_skip_btn"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/gray_btn_bg_selector"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="@color/list_soft_describe_color"
+        android:textSize="13.3dp" /> -->
+
+</FrameLayout>

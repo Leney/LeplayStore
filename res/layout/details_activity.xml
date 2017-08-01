@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/details_bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="66.6dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <!-- 赞按钮 -->
+
+        <TextView
+            android:id="@+id/details_praise_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/unlike"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="999人喜欢"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1" >
+
+            <com.xd.leplay.store.gui.details.view.DetailDownloadProgressButton
+                android:id="@+id/details_bottom_download_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/details_bottom_comment_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_bg_selector"
+                android:text="@string/do_comment"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </FrameLayout>
+        <!-- 分享按钮 -->
+
+        <TextView
+            android:id="@+id/details_share_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/share"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.xd.leplay.store.gui.details.view.DetailCommentListView
+        android:id="@+id/details_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/details_bottom_lay" />
+
+    <View
+        android:id="@+id/details_tab_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="6.6dp"
+        android:layout_above="@id/details_bottom_lay"
+        android:background="@drawable/tab_bottom_line" />
+
+    <!-- 顶部固定不动的tab部分(详情、评论) -->
+
+    <include
+        android:id="@+id/details_top_tab_lay"
+        layout="@layout/details_top_tab_lay"
+        android:background="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingEnd="13.3dp"
+    android:paddingLeft="13.3dp"
+    android:paddingRight="13.3dp"
+    android:paddingStart="13.3dp" >
+
+    <!-- 原密码输入框 -->
+
+    <EditText
+        android:id="@+id/modify_pwd_old_pwd_edit"
+        style="@style/loginEditType"
+        android:layout_marginTop="33.3dp"
+        android:hint="@string/input_old_pwd"
+        android:inputType="textPassword" />
+
+    <!-- 新密码输入框 -->
+
+    <EditText
+        android:id="@+id/modify_pwd_new_pwd_edit"
+        style="@style/loginEditType"
+        android:layout_marginTop="23.3dp"
+        android:hint="@string/input_new_pwd_hint"
+        android:inputType="textPassword" />
+
+    <!-- 确认密码输入框 -->
+
+    <EditText
+        android:id="@+id/modify_pwd_new_pwd_affirm_edit"
+        style="@style/loginEditType"
+        android:layout_marginTop="23.3dp"
+        android:hint="@string/input_new_pwd_again"
+        android:inputType="textPassword" />
+
+    <!-- 提交按钮 -->
+
+    <Button
+        android:id="@+id/modify_pwd_submit_btn"
+        style="@style/blueBtnType"
+        android:layout_marginTop="33.3dp"
+        android:text="@string/submit" />
+
+</LinearLayout>
